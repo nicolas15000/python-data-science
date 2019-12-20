@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 #importer les données Advertising.csv
-donnees = pd.read_csv('Advertising.csv', index_col=0)
+donnees = pd.read_csv('dataset\Advertising.csv', index_col=0)
 donnees.head()
 
 from sklearn.linear_model import LinearRegression

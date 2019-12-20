@@ -1,4 +1,4 @@
-# https://realpython.com/linear-regression-in-python/
+# https://www.geeksforgeeks.org/linear-regression-python-implementation/
 
 import numpy as np
 from sklearn.linear_model import LinearRegression

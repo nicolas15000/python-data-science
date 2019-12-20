@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from scipy import stats
 
-df = pd.read_csv("univariate_linear_regression_dataset.csv")
+df = pd.read_csv("dataset/univariate_linear_regression_dataset.csv")
 
 #selection de la première colonne de notre dataset (la taille de la population)
 X = df.iloc[0:len(df),0]
