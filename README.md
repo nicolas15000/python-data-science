@@ -12,3 +12,5 @@ Je vais en ajouter un paquet au fil du temps, en particulier, de l'import CSV av
 
 My Goal is to eventually call theses scripts from my node vue starter, later.<br>
 
+Merci aussi au livre https://www.eyrolles.com/Informatique/Livre/programmation-lineaire-avec-excel-9782212126594/
+
