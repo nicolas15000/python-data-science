@@ -31,7 +31,7 @@ Lp_prob +=  x + y + z + k
   
 # Les contraintes : 
 
-# L'usine z doit produire au minimum  400 voitures 
+# L'usine z doit produire au minimum  100 voitures 
 Lp_prob +=  z >= 100
 
 
