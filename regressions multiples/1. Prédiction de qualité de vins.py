@@ -40,7 +40,6 @@ y = dataset['quality'].values
 plt.figure(figsize=(15,10))
 plt.tight_layout()
 seabornInstance.distplot(dataset['quality'])
-plt.show()
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 

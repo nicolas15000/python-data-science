@@ -1,3 +1,5 @@
+# Ne fonctionne pas à revoir !
+
 from sklearn.linear_model import LinearRegression
 
 X = ([['14:56:50','2012-04-12 14:56:50','2012-04-12 15:27:01','2012-04-12 15:42:06']])  # put your dates in here
