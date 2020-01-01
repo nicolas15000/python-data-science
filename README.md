@@ -1,5 +1,5 @@
 # python
-Bunch of french translated python regressions and linear solvers studies scripts<br>
+Bunch of ordered french translated python regressions and linear solvers studies scripts<br>
 Je vais stocker ici des scripts python de regression ainsi que mes résolutions de problèmes linéaires avec des solveurs. Certains seront repris, d'autres de moi...<br><br>
 
 * numpy<br>
