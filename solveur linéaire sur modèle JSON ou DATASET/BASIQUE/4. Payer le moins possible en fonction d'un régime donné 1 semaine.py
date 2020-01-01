@@ -1,6 +1,6 @@
 # Soit 2 aliments x pain et y fromage contenant chacun 2 éléments mesurés en calories et en grammes
-# Pain 1000 calories, 20 grammes de protéines, 20 en indice de bonté pour la santé
-# Fromage 2000 calories, 80 grammes de protéines, 10 en indice de bonté pour la santé
+# Pain 1000 calories, 20 grammes de protéines
+# Fromage 2000 calories, 80 grammes de protéines
 # Le régime alimentaire minimum qui doit être atteint est de 3000 cal et 80g de protéines par jour.
 # Le prix du pain est de 1 euros par livre et le prix du fromage est de 2 euros par livre.
 # Comment effectuer ses achats pour minimiser sa dépense totale.
@@ -34,8 +34,7 @@ Lp_prob += 1000 * x + 2000 * y >= 3000 * 7
 # Protéines : on multiplie par 7 pour manger une semaine entière
 Lp_prob += 20 * x + 80 * y >= 80 * 7
 
-# Indice de bonté pour la santé : on multiplie par 7 pour avoir un bon indice de bonté pour la santé pour la semaine
-Lp_prob += 20 * x + 10 * y >= 40 * 7
+
 
   
 # Afficher le problème
