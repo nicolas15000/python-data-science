@@ -9,6 +9,7 @@ Je vais en ajouter un paquet au fil du temps, en particulier, de l'import CSV av
 * scipy<br>
 * sklearn<br>
 * pulp (Solvers)<br>
+* pyschedule https://github.com/timnon/pyschedule
 
 My Goal is to eventually call theses scripts from my node vue starter, later.<br>
 
