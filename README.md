@@ -1,5 +1,5 @@
-# TRANSLATED PYTHON DATA SCIENCE SCRIPTS
-Bunch of ordered french translated python regressions and linear solvers studies scripts<br><br>
+# PYTHON DATA SCIENCE SCRIPTS
+Some ordered python regressions and linear solvers studies scripts, some are mine, others are owns and translated <br><br>
 Je vais stocker ici des scripts python de regression ainsi que mes résolutions de problèmes linéaires avec des solveurs. Certains seront repris, d'autres de moi...<br><br>
 Je vais en ajouter un paquet au fil du temps, en particulier, de l'import CSV avec de l'utlisation de solveurs linéaires .<br><br>
 
