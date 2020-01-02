@@ -41,17 +41,12 @@ while i <= 10:
 print("total:",f'{total * 100  :9.9f}' , "%" )
 
 
+# Ou alors, plus simplement, avec la bonne fonction ...
+poisson.cdf(10, 20)
+print("total:" poisson.cdf(10, 20))
 
 
-
-
-
-
-
-
-
-
-
+# GRAPHIQUES
 # poisson = np.random.poisson(10, 20)
 # plt.hist(poisson)
 # plt.show()
