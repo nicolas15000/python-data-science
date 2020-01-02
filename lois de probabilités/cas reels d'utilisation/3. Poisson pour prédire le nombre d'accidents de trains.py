@@ -43,7 +43,7 @@ print("total:",f'{total * 100  :9.9f}' , "%" )
 
 # Ou alors, plus simplement, avec la bonne fonction ...
 poisson.cdf(10, 20)
-print("total:" poisson.cdf(10, 20))
+print("total:", poisson.cdf(10, 20))
 
 
 # GRAPHIQUES
