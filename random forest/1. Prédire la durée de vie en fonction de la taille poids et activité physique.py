@@ -48,7 +48,7 @@ plt.ylabel('Predicted')
 plt.show()
 
 
-# C'est bien, mais maintenant, on veut donner à l'alorythme un autre fichier 
+# C'est bien, mais maintenant, on veut donner à l'algorithme un autre fichier 
 # qui ne comprends pas les espérances de vie, mais qui comprends les features (taille poids, cigarette...), 
 # et qu'il calcule nos espérances de vie !
 
