@@ -15,5 +15,5 @@ My Goal is to call theses scripts from my node vue starter, later, with a Flask 
 
 
 Merci aussi au livre https://www.eyrolles.com/Informatique/Livre/programmation-lineaire-avec-excel-9782212126594/
-qui récapitule bien les principaux problèmes rencontrés. je voudrais les transcrire en Python un jour si possible ...
+qui récapitule bien les principaux problèmes rencontrés. Je voudrais les transcrire en Python dès que possible ...
 
