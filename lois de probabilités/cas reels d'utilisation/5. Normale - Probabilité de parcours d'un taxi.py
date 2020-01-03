@@ -7,9 +7,9 @@ import scipy.stats
 
 # Problème : 
 """  
-Une compagnie de transport possède un parc de 200 cars. On appelle X, la variable aléatoire qui, à un car choisi au hasard associe la distance journalière parcourue.
+Une compagnie de transport possède un parc de 200 taxis. On appelle X, la variable aléatoire qui, à un taxi choisi au hasard associe la distance journalière parcourue.
 On suppose que X suit la loi normale (90,14 au carré). (moyenne, écart type)
-Quelle est la probabilité qu'un car parcourt entre 70 et 100 km par jour ?
+Quelle est la probabilité qu'un taxi parcourt entre 70 et 100 km par jour ?
 
 """
 
