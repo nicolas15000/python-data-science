@@ -1,3 +1,5 @@
+# https://stackoverflow.com/questions/59582648/turning-bars-to-a-normal-distribution
+
 # Import des librairies
 import matplotlib.pyplot as plt
 import statistics
