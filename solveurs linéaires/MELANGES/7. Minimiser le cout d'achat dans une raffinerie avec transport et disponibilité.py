@@ -11,9 +11,9 @@ Ajout d'une disponibilité maximale chez les 3 fournisseurs des 3 bruts et du co
 # Création de Fuel .
 
 # HISTOIRE :
-# On veut créer 100 litres d'essence, en mélangeant 3 bruts différents ayant des caractéristiques différentes .
+# On veut créer 1000 litres d'essence, en mélangeant 3 bruts différents ayant des caractéristiques différentes .
 #On veut payer le moins cher possible les 1000 litres d'essence, tout en respectant les contraintes de production et de commande .
-# La direction ne veut pas que le cout de transport dépasse 65 euros pour 100 litres d'essence 
+# La direction ne veut pas que le cout de transport dépasse 65 euros pour 1000 litres d'essence 
 # (pourtant, on remarque que le cout de la fonction objectif globale diminue si on augmente la valeur de la contrainte de cout de transport à 100, 
 # ca veut donc dire que c'est une fausse économie à cause du prix du litre de vouloir économiser sur le trajet)
 
