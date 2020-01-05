@@ -4,6 +4,12 @@
 We make steel with raw materials, we want to reduce the cost of producing this steel
 to make more money, but still respecting the minimum characteristics of quality steel
 
+Problem redone with vectors variables by 
+https://stackoverflow.com/users/4988601/kabdulla
+
+Le problème a été refait par https://stackoverflow.com/users/4988601/kabdulla
+Pour moi il manque encore la division par D(demande) 5000 sur les MIN MAX, je suis dessus...
+
 """
 
 # Minimize the cost of metal alloys.
