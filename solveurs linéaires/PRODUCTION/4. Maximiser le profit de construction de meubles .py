@@ -28,7 +28,8 @@ x1+2x2+3x3+3x4≤24
 x1,x2,x3,x4≥0
 
 
-NOTE : Le Pl est pas trop bien mis au format dictionnaire - liste, il faut arranger cela .
+NOTE : Le Pl est pas trop bien mis au format dictionnaire - liste, il faut arranger(factoriser) 
+cela afin que si les datas proviennent d'une base de données, tout se fasse automatiquement ( du n et pas de valeurs fixe).
 Le résultat est ok et conforme au polycopié de l'université de Rennes .
 
 """
