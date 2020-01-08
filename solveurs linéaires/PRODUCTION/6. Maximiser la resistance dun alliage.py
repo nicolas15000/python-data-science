@@ -32,9 +32,6 @@ solidite        = {"cuivre": 2, "zinc": 3, "argent": 1}
 # La conductivité par elements (en siemens factice)
 conductivite    = {"cuivre": 4, "zinc": 1, "argent": 3}
 
-# Les stocks de nos ressources en KG
-# stocks = {"plastique": 142, "bois ": 117, "acier": 124}
-
 # Un raccourcis pour prendre en compte les 3 variables de décision "cuivre", "zinc","argent" ,leur unité est le kilo
 x = LpVariable.dicts("elements ", elements , 0)
 
