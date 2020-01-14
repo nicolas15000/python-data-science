@@ -89,3 +89,14 @@ for v in prob.variables():
     
 # Le resultat de la function objectif est ici
 print ("Total à payer en euros", value(prob.objective))
+
+""" Status: Infeasible
+Alliage_d'alu_1 = 0.0
+Alliage_d'alu_2 = 0.0
+Alliage_de_cuivre_1 = 0.0
+Alliage_de_cuivre_2 = 0.0
+Alliage_de_fer_1 = 0.0
+Alliage_de_fer_2 = 0.0
+Alliage_de_fer_3 = 10000.0
+Total à payer en euros 9000.0 """
+

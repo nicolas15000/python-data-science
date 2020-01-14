@@ -1,12 +1,14 @@
-# Soit 2 aliments x pain et y fromage contenant chacun 2 éléments mesurés en calories et en grammes
-# Pain 1000 calories, 20 grammes de protéines, 20 en indice de bonté pour la santé
-# Fromage 2000 calories, 80 grammes de protéines, 10 en indice de bonté pour la santé
-# Le régime alimentaire minimum qui doit être atteint est de 3000 cal et 80g de protéines par jour.
-# Le prix du pain est de 1 euros par livre et le prix du fromage est de 2 euros par livre.
-# Comment effectuer ses achats pour minimiser sa dépense totale.
+# Soit 4 aliments pour constituer un gateau
+# On doit maximiser la ration calorique
+# On ne doit pas mettre plus d'une dose de sucre.
 
+			GOUT    QUALITE
+fromage		4		2
+lait		3		3	
+sucre		8		1
+sel			2		1
 
-# Minimiser  :  Z = 1x + 2y
+# Maximiser  :  Z = 4x + 2y
 # Sous les contraintes : 
 # 1000x + 2000y <= 3000
 # 20x + 80y <= 100
