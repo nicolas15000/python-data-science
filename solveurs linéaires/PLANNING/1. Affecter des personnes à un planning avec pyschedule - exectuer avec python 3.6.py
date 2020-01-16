@@ -21,6 +21,8 @@ cuisiner = S.Task('cuisiner',length=1,delay_cost=1)
 nettoyer = S.Task('nettoyer',length=2,delay_cost=1)
 polir = S.Task('polir',length=3,delay_cost=2)
 
+
+
 # chaque tache peut être réalisée par Alice ou Bob
 cuisiner += Alice | Bob
 nettoyer += Alice | Bob
@@ -31,7 +33,7 @@ solvers.mip.solve(S,msg=1)
 print(S.solution())
 
 
-Résultat
+# Résultat
 # INFO: execution time for solving mip (sec) = 0.04697251319885254
 # INFO: objective = 1.0
 # [(cuisiner, Alice, 0, 1), (polir, Bob, 0, 3), (nettoyer, Alice, 1, 3)]
