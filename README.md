@@ -27,5 +27,5 @@ https://github.com/Columbia-Intro-Data-Science<br><br>
 Les cours sont ici : <br>
 https://github.com/Columbia-Intro-Data-Science/APMAE4990-/tree/master/notebooks<br><br>
 
-Un autre dépot très intéressant :<br>
+Un autre dépot sympa :<br>
 https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers<br>
