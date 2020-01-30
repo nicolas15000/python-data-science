@@ -5,8 +5,8 @@ My Goal is to call theses scripts from my node vue starter, later, with a Flask 
 <b>French</b><br>
 Je vais stocker ici des scripts python de regression ainsi que mes résolutions de problèmes linéaires avec des solveurs. Certains seront repris, d'autres de moi...<br><br>
 C'est orienté "Cas réel d'utilisation", et pas théorie.
-Je vais en ajouter un paquet au fil du temps, en particulier, de l'import CSV avec de l'utlisation de solveurs linéaires .<br><br>
-L'idée étant de pouvoir résoudre un certain nombre de problèmes  , les confirmer par comparaisons de résultats ( Par exemple, comparaison Excel solveur / Python Pulp), et de pouvoir les dériver/adapter un peu.
+Je vais en ajouter un paquet au fil du temps, en particulier, de l'import CSV avec de l'utilisation de solveurs linéaires .<br><br>
+L'idée étant de pouvoir résoudre un certain nombre de problèmes standards, les confirmer par comparaisons de résultats ( Par exemple, comparaison Excel solveur / Python Pulp), et de pouvoir les dériver/adapter un peu en N.
 
 * numpy<br>
 * matplotlib<br>
