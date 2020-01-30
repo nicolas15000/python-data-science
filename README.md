@@ -18,11 +18,11 @@ L'idée étant de pouvoir résoudre un certain nombre de problèmes  , les confi
 
 
 
+<b>Liens et références</b><br>
+Merci au livre https://www.eyrolles.com/Informatique/Livre/programmation-lineaire-avec-excel-9782212126594/<br>
+qui récapitule bien les principaux problèmes rencontrés avec le solveur. Je voudrais les transcrire en Python dès que possible ...<br><br>
 
-Merci aussi au livre https://www.eyrolles.com/Informatique/Livre/programmation-lineaire-avec-excel-9782212126594/<br>
-qui récapitule bien les principaux problèmes rencontrés. Je voudrais les transcrire en Python dès que possible ...<br><br>
-
-A regarder également le super dépot Columbia-Intro-Data-Science avec tout le travail des étudiants de Columbia dans ce domaine avec Python!
+A regarder également le super dépot Columbia-Intro-Data-Science avec tout le travail d'étudiants de Columbia dans ce domaine avec Python.<br>
 
 https://github.com/Columbia-Intro-Data-Science<br><br>
 
