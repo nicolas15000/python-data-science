@@ -22,6 +22,12 @@ L'idée étant de pouvoir résoudre un certain nombre de problèmes standards, l
 Merci au livre https://www.eyrolles.com/Informatique/Livre/programmation-lineaire-avec-excel-9782212126594/<br>
 qui récapitule bien les principaux problèmes rencontrés avec le solveur. Je voudrais les transcrire en Python dès que possible ...<br><br>
 
+Chaines Youtube :<br>
+Machine Learnia https://www.youtube.com/channel/UCmpptkXu8iIFe6kfDK5o7VQ<br>
+Nicolas Br https://www.youtube.com/channel/UCzsU0h6kxkSSCqpXTRUHubg<br>
+<br><br>
+
+
 A regarder également le super dépot Columbia-Intro-Data-Science avec tout le travail d'étudiants de Columbia dans ce domaine avec Python.<br>
 
 https://github.com/Columbia-Intro-Data-Science<br><br>
