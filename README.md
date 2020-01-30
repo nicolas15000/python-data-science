@@ -1,5 +1,5 @@
 # PYTHON DATA SCIENCE SCRIPTS EN FRANCAIS
-<b>English</b>
+<b>English</b><br>
 Some ordered python regressions and linear solvers studies scripts, some are mine, others are from various authors and translated into french <br><br>
 My Goal is to call theses scripts from my node vue starter, later, with a Flask server.<br><br>
 <b>French</b><br>
