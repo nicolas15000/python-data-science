@@ -22,5 +22,7 @@ qui récapitule bien les principaux problèmes rencontrés. Je voudrais les tran
 
 A regarder également le super dépot Columbia-Intro-Data-Science avec tout le travail des étudiants de Columbia dans ce domaine avec Python!
 
-https://github.com/Columbia-Intro-Data-Science
+https://github.com/Columbia-Intro-Data-Science<br><br>
 
+Les cours sont ici : <br>
+https://github.com/Columbia-Intro-Data-Science/APMAE4990-/tree/master/notebooks<br>
