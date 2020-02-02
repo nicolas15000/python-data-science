@@ -166,37 +166,3 @@ print("Residual sum of squares Error: %.2f"
 # Afin de mesurer l'importance des caractéristiques impliquées, nous pouvons voir quels sont les coefficients les plus significatifs. Afin de mesurer le significatif, nous devons standardiser le coefficient et supprimer les facteurs colinéaires.
 
 
-
-
-
-# Initialiser et ajuster le modèle
-lm = LinearRegression()
-model = lm.fit(X, y)
-
-#  Encore une fois, il n'est pas nécessaire de calculer nous-mêmes les valeurs pour alpha et bêta - il suffit d'appeler .intercept_ pour alpha et .coef_ pour un tableau avec nos coefficients beta1 et beta2:
-print(f'alpha = {model.intercept_}')
-print(f'betas = {model.coef_}')
-
-""" Ca affiche :
-alpha = 2.921099912405138
-betas = [0.04575482 0.18799423] """
-
-""" Par conséquent, notre modèle peut s'écrire:
-Ventes = 2,921 + 0,046 * TV + 0,1880 * Radio.
-Nous pouvons prédire des valeurs en utilisant simplement .predict (): """
-
-model.predict(X)
-
-""" 
-Maintenant que nous avons adapté un modèle de régression linéaire 
-multiple à nos données, 
-nous pouvons prédire les ventes à partir de n'importe quelle combinaison de coûts publicitaires TV et radio! 
-Par exemple, si nous voulions savoir combien de ventes nous réaliserions si nous investissions 300 $ dans la publicité TV 
-et 200 $ dans la publicité Radio… il nous suffit de brancher les valeurs!
- """
-new_X = [[300, 200]]
-print(model.predict(new_X))
-
-""" Ca affiche que l'on va probablement gagner cette somme en dollars! :
-[54.24638977]
-""" 
