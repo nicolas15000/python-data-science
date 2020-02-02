@@ -14,7 +14,8 @@ L'idée étant de pouvoir résoudre un certain nombre de problèmes standards, l
 * scipy<br>
 * sklearn<br>
 * pulp (Solvers)<br>
-* pyschedule https://github.com/timnon/pyschedule<br><br>
+* pyschedule https://github.com/timnon/pyschedule<br>
+* Survival regression https://lifelines.readthedocs.io/en/latest/Survival%20Regression.html#the-dataset-for-regression <br><br>
 
 
 
