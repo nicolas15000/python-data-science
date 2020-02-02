@@ -106,10 +106,10 @@ from sklearn.model_selection import train_test_split
 # puis ajustons le modèle à nos prédicteurs et variables de sortie:
 
 # a) Définissez y pour être les ventes en df
-y = df['sales']
+y = df['Sales']
 
 # b) Définissez X pour être juste les fonctionnalités décrites ci-dessus dans df
-X = df.drop(['sales'],1) # ON PRENDS TOUTES LES COLONNES SAUF LA COLONNE DES VENTES QUON DROPPE 'supprime'
+X = df.drop(['Sales'],1) # ON PRENDS TOUTES LES COLONNES SAUF LA COLONNE DES VENTES QUON DROPPE 'supprime'
 
 # c) Diviser au hasard les données en formation et tests - 80% de formation, 20% de test.
 X_train,X_test,y_train,y_test = train_test_split(
@@ -122,7 +122,7 @@ regress.fit(X_train,y_train)
 print('La prédiction est : \n',regress.predict(X_test))
 
 # e) Évaluez le R ^ 2 sur les données de test. Est-ce que c'est bon? Mal? Pourquoi?
-print('R^2 is: \n',regress.score(X_test,y_test))
+print('R^2 est: \n',regress.score(X_test,y_test))
 
 # R ^ 2 est:
  # 0,899438024101
@@ -144,14 +144,14 @@ plt.title("Diagrammes de dispersion de la prévision par rapport à la valeur r�
 
 
 print('Coefficients:\n',regress.coef_)
-print("Residual sum of squares Error: %.2f"
+print("Somme résiduelle des carrés Erreur:: %.2f"
 % np.mean((regress.predict(X_test) - y_test) ** 2))
 
 
 
 # Coefficients:
  # [ 0.04472952  0.18919505  0.00276111]
-# Residual sum of squares Error: 3.17
+# Somme résiduelle des carrés Erreur:: 3.17
 
 
 # Explication:
