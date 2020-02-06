@@ -21,7 +21,7 @@ L'idée étant de pouvoir résoudre un certain nombre de problèmes standards, l
 
 <b>Liens et références</b><br>
 Merci au livre https://www.eyrolles.com/Informatique/Livre/programmation-lineaire-avec-excel-9782212126594/<br>
-qui récapitule bien les principaux problèmes rencontrés avec le solveur. Je voudrais les transcrire en Python dès que possible ...<br><br>
+qui récapitule bien les principaux problèmes rencontrés avec le solveur. Je voudrais les transcrire en Python dès que possible ...Le problème étant que l'auteur ayant utilisé la plupart du temps des doubles tableaux, c'est assez difficile à retranscrire pour l'instant pour moi, je suis dessus.<br><br>
 
 Chaines Youtube Françaises:<br>
 Machine Learnia https://www.youtube.com/channel/UCmpptkXu8iIFe6kfDK5o7VQ<br>
