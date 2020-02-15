@@ -1,7 +1,12 @@
 # PYTHON DATA SCIENCE SCRIPTS EN FRANCAIS
 <b>English</b><br>
 Some ordered python regressions and linear solvers studies scripts, some are mine, others are from various authors and translated into french <br><br>
-My Goal is to call theses scripts from my node vue starter, later, with a Flask server.<br><br>
+My wish is to call theses scripts from my node vue starter, later, with a Flask server.<br>
+
+Thanks to this nice book : 
+https://www.amazon.fr/Python-Data-Science-Dummies-Mueller/dp/1119547628
+
+<br>
 <b>French</b><br>
 Je vais stocker ici des scripts python de regression ainsi que mes résolutions de problèmes linéaires avec des solveurs. Certains seront repris, d'autres de moi...<br><br>
 C'est orienté "Cas réel d'utilisation", et pas théorie.
