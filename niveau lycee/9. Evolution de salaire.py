@@ -9,7 +9,15 @@ Au premier janvier 2020, Philippe vient de se faire embaucher pour un salaire ne
  au mois de mars, etc. Déterminer le mois et l'année à partir desquels le salaire net mensuel de Philippe
  dépassera 2 000 €.
 
+Calmuler modulo :
+Méthode 2: Effectuer la division entière et calculer la valeur de la différence.
+
+Exemple : Calcul de A=123modN=4 , faire la division : 123/4=30.75. Récupèrer la partie entière : 30, 
+la multiple par N=4 : 30×4=120. La différence entre 123 et 120 vaut 3, donc 123%4=3.
+
 #  NOTE : JE N'AIME PAS
+
+
 """
 
 # 0. import de la lib
