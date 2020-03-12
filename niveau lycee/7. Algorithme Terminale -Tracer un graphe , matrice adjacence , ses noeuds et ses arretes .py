@@ -26,3 +26,8 @@ import matplotlib.pyplot as plt
 # 4. On dessine le graphe 
 nx.draw_networkx(G) 
 plt.show()
+
+#5 Ajouter une arrète entre le noeud 1 et 5 
+G.add_edge(1,5) 
+nx.draw_networkx(G) 
+plt.show()
