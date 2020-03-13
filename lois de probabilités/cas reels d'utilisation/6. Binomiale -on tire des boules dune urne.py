@@ -45,18 +45,25 @@ print(resultat);
 # on aura pas trop les même chiffres, mais si on répéte la loi 100000 fois, 
 # la loi des grands nombres fait qu'on se rapproche d'une stat globale.
 
-# Maintenant, on vas faire 1000 répétitions des 5 tirages et calculer la probabilité d'obtenir zéro boules vertes
+# Maintenant, on va faire 1000 répétitions des 5 tirages et calculer la probabilité d'obtenir zéro boules vertes
 
 resultat  = sum(np.random.binomial(5,0.3,1000)==0)/1000.
-print(resultat);
+print("La chance d'avoir zéro boules vertes est de ",resultat * 100 ,"%");
 
 # réponse  = 0.195, ou 19.5 %
 
-# Maintenant, on vas faire 1000 répétitions des 5 tirages et calculer la probabilité d'obtenir au moins 3 boules vertes
+# Maintenant, on va faire 1000 répétitions des 5 tirages et calculer la probabilité d'obtenir au moins 3 boules vertes
 
-resultat  = sum(np.random.binomial(5,0.3,1000) >  3)/1000.
-print(resultat);
+resultat  = sum(np.random.binomial(5,0.3,1000) >=  3)/1000.
+print("La chance d'avoir au moins 3 boules vertes est de ",resultat * 100 ,"%");
 
-# réponse  = 0.031, ou 3.1 %
+# réponse  = 0.169, ou 16.9 %
+
+# Maintenant, on va faire 1000 répétitions des 5 tirages et calculer la probabilité d'obtenir  5 boules vertes
+
+resultat  = sum(np.random.binomial(5,0.3,1000) ==  5)/1000.
+print("La chance d'avoir 5 boules vertes est de ",resultat * 100 ,"%");
+
+# réponse  = 0.002, ou 0.2 %
 
 
