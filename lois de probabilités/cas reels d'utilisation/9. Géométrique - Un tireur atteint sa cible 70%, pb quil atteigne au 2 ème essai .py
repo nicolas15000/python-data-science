@@ -27,4 +27,8 @@ result = (np.random.geometric(0.7, size=1000)==2).mean()
 print("Le pourcentage qu'il atteigne sa cible au bout du deuxième coup est de  ",result * 100, "%");
 
 
+# Trouver la moyenne et l'écart type
+# M = 1/p  = 1/0.7 = 1.43
 
+# Ecart type = racine de 2 sur p au carré 
+# = 0.3 / 0.7 ** 2 = 0.78
