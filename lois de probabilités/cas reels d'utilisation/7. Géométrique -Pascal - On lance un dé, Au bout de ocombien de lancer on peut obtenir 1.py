@@ -1,9 +1,9 @@
 """ 
-    Loi géompétrique ou de pascal 
+    Loi géométrique ou de pascal - Python géométric law with numpy
 
     https://docs.scipy.org/doc/numpy-1.10.1/reference/generated/numpy.random.geometric.html
 
-    AUTRES EXAMPLES
+    AUTRES EXEMPLES :
 
     Un ingénieur en sécurité estime que 35% de tous les accidents industriels dans son usine sont causés par le non-respect des instructions par les employés. 
     Elle décide d'examiner les rapports d'accident (sélectionnés au hasard et replacés dans la pile après lecture) jusqu'à ce qu'elle en trouve un qui montre un 
@@ -48,7 +48,7 @@ Nombre de lancers = 100
 resultat = np.random.geometric(p=0.16, size=100)
 print(resultat);
 
-#   Dans ce tableau, on a obtenu un 6 au deuxième lancer, puis au 19 ème lancer, puis au 3ème lancer etc ...
+#   Dans ce tableau, on a obtenu un 1 au deuxième lancer, puis au 19 ème lancer, puis au 3ème lancer etc ...
 
 """ [ 2 19  3  2  2  1  2  1 22  3  1  6  3  1  2 11  8 28  4  7  9  3  3  5
  18  8  2 15  6  4  4 25  3  2  2  3  4  3  3  4  7  9  2 10  1  1  6  7
