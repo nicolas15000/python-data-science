@@ -1,4 +1,6 @@
 """ 
+    NOTE *** FAUX *** EN COURS DETUDE
+    
     Loi géométrique ou de pascal - Python géométric law with numpy
 
     https://docs.scipy.org/doc/numpy-1.10.1/reference/generated/numpy.random.geometric.html
