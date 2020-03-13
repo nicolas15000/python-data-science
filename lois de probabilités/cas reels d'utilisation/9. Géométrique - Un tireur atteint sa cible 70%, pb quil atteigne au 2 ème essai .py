@@ -1,0 +1,32 @@
+""" 
+
+    Loi géométrique ou de pascal - Python géométric law with numpy
+
+    https://docs.scipy.org/doc/numpy-1.10.1/reference/generated/numpy.random.geometric.html
+
+    !!!  Merci à https://stackoverflow.com/users/4238408/quang-hoang  pour l'aide !!!
+
+ """
+
+ # Import des librairies
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Problème : 
+"""  
+Un tireur atteint sa cible 70 % du temps , 
+
+Quelle est la probabilité qu'il l'atteigne au 2ème coup ?
+
+Formule P(X = x) = q  **x-1 * p
+
+
+"""
+
+# P(X=2) = 0.3 **1 * 0.7 = 0.21
+result = (np.random.geometric(0.7, size=1000)==2).mean()
+print("Le pourcentage qu'il atteigne sa cible au bout du deuxième coup est de  ",result * 100, "%");
+
+
+
