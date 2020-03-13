@@ -4,8 +4,6 @@
 
     https://docs.scipy.org/doc/numpy-1.10.1/reference/generated/numpy.random.geometric.html
 
-    !!!  Merci à https://stackoverflow.com/users/4238408/quang-hoang  pour l'aide !!!
-
  """
 
  # Import des librairies
