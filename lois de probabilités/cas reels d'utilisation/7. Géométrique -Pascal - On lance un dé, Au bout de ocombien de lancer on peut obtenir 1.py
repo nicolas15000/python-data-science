@@ -1,6 +1,10 @@
 """ 
     Loi géométrique ou de pascal - Python géométric law with numpy
 
+    
+    Attention ce code n'est pas sur à 100%, voir le cas numéro 8 pour un code sur à 100 % sur les pourcentages
+
+
     https://docs.scipy.org/doc/numpy-1.10.1/reference/generated/numpy.random.geometric.html
 
     AUTRES EXEMPLES :
