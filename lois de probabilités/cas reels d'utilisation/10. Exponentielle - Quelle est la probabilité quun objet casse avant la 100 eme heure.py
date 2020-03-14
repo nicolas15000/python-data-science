@@ -40,6 +40,8 @@ MaProbabiliteExponentielle = 1 - math.exp(lambdaCalcul)
 
 print("J'ai calculé avec un calcul primaire ma probabilité ",MaProbabiliteExponentielle * 100 , "%");
 
+# J'ai calculé avec un calcul primaire ma probabilité  29.531191028128656 %
+
 
 # ESSAI DE CALCUL AVEC SCIPY =
 #  This example declares B∼Exp(λ=0.0035)
@@ -49,3 +51,5 @@ print(B.pdf(1))       # f(1), the probability density at 1
 print(B.cdf(100))     # F(2) which is also P(B < 100) -> Voici ma probabilité
 print(B.rvs())        # Get a random sample from B
 
+
+# B.cdf(100) = 0.2953119102812866
