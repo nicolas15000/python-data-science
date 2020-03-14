@@ -9,7 +9,9 @@
    STANFORD
    http://web.stanford.edu/class/archive/cs/cs109/cs109.1192/handouts/pythonForProbability.html
 
-
+	Merci à 
+	https://stackoverflow.com/users/67579/willem-van-onsem
+	pour la correction SCIPY 
  """
 
  # Problème : 
@@ -39,10 +41,11 @@ MaProbabiliteExponentielle = 1 - math.exp(lambdaCalcul)
 print("J'ai calculé avec un calcul primaire ma probabilité ",MaProbabiliteExponentielle * 100 , "%");
 
 
-# ESSAI DE CALCUL AVEC SCIPY = ECHEC , B.cdf est faux.
+# ESSAI DE CALCUL AVEC SCIPY =
 #  This example declares B∼Exp(λ=0.0035)
-B = stats.expon(0.0035)   # Declare B to be a normal random variable
+
+B = stats.expon(scale=1/0.0035)   # Merci https://stackoverflow.com/users/67579/willem-van-onsem pour le scale !
 print(B.pdf(1))       # f(1), the probability density at 1
-print(B.cdf(100))       # F(2) which is also P(B < 100)
+print(B.cdf(100))     # F(2) which is also P(B < 100) -> Voici ma probabilité
 print(B.rvs())        # Get a random sample from B
 
