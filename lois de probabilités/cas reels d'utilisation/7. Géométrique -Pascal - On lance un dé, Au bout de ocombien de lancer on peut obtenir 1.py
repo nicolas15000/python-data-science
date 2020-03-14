@@ -2,7 +2,8 @@
     Loi géométrique ou de pascal - Python géométric law with numpy
 
     
-    Attention ce code n'est pas sur à 100%, voir le cas numéro 8 pour un code sur à 100 % sur les pourcentages
+    Attention ce code n'est pas sur à 100% car basé sur la function RANDOM, voir le cas numéro 8 pour un meilleur code  sur les pourcentages
+    En effet, faire des calculs sur les datas randoms est étrange ...
 
 
     https://docs.scipy.org/doc/numpy-1.10.1/reference/generated/numpy.random.geometric.html
