@@ -140,13 +140,17 @@ pprint(G.edges(data=True))
 # Edges (Arrêtes):
 # OutMultiEdgeDataView([('dormir', 'dormir', {'weight': 0.4, 'label': 0.4}), ('dormir', 'manger', {'weight': 0.2, 'label': 0.2}), ('dormir', 'defequer', {'weight': 0.4, 'label': 0.4}), ('manger', 'dormir', {'weight': 0.45, 'label': 0.45}), ('manger', 'manger', {'weight': 0.45, 'label': 0.45}), ('manger', 'defequer', {'weight': 0.1, 'label': 0.1}), ('defequer', 'dormir', {'weight': 0.45, 'label': 0.45}), ('defequer', 'manger', {'weight': 0.25, 'label': 0.25}), ('defequer', 'defequer', {'weight': 0.3, 'label': 0.3})])
 
-# Maintenant, on se sert de la lib graphiviz pour générer le graphique 
+# Maintenant, on se sert de la lib graphiviz pour générer le graphique   ( le graphe ne s'affiche pas sous mon win 10)
 pos = nx.drawing.nx_pydot.graphviz_layout(G, prog='dot')
 nx.draw_networkx(G, pos)
+plt.show()
+
 
 # On crée les titres des états pour Jupiter mais ce n'est pas nécessaire
 edge_labels = {(n1,n2):d['label'] for n1,n2,d in G.edges(data=True)}
 nx.draw_networkx_edge_labels(G , pos, edge_labels=edge_labels)
 
-# On mets ça dans un fichier word 
+# On mets ça dans un fichier word ( le graphe ne s'affiche pas sous mon win 10)
 nx.drawing.nx_pydot.write_dot(G, 'pet_dog_markov.dot')
+plt.show()
+
