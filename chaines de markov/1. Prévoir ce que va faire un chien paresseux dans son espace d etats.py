@@ -121,24 +121,32 @@ puis dessinons un mauvais tracé networkx lors de la sortie de notre graphique v
 
 
 """
-# create graph object
+# Crer l'objet graph
 G = nx.MultiDiGraph()
 
-# nodes correspond to states
+# les noeuds correspondent aux états du chien qu'on a défini au début du programme
 G.add_nodes_from(etats)
 print(f'Nodes:\n{G.nodes()}\n')
 
-# edges represent transition probabilities
+# Les arrêtes représentent les probabilités de transitionner d'un état à l'autre 
+# Edges represent transition probabilities
 for k, v in arretes_wts.items():
     tmp_origin, tmp_destination = k[0], k[1]
     G.add_edge(tmp_origin, tmp_destination, weight=v, label=v)
 print(f'Edges:')
-pprint(G.edges(data=True))    
 
+""" On affiche les arrêtes et leurs poids (probabilités de passer d'un état à l'autre) """
+pprint(G.edges(data=True))    
+# Edges (Arrêtes):
+# OutMultiEdgeDataView([('dormir', 'dormir', {'weight': 0.4, 'label': 0.4}), ('dormir', 'manger', {'weight': 0.2, 'label': 0.2}), ('dormir', 'defequer', {'weight': 0.4, 'label': 0.4}), ('manger', 'dormir', {'weight': 0.45, 'label': 0.45}), ('manger', 'manger', {'weight': 0.45, 'label': 0.45}), ('manger', 'defequer', {'weight': 0.1, 'label': 0.1}), ('defequer', 'dormir', {'weight': 0.45, 'label': 0.45}), ('defequer', 'manger', {'weight': 0.25, 'label': 0.25}), ('defequer', 'defequer', {'weight': 0.3, 'label': 0.3})])
+
+# Maintenant, on se sert de la lib graphiviz pour générer le graphique 
 pos = nx.drawing.nx_pydot.graphviz_layout(G, prog='dot')
 nx.draw_networkx(G, pos)
 
-# create edge labels for jupyter plot but is not necessary
+# On crée les titres des états pour Jupiter mais ce n'est pas nécessaire
 edge_labels = {(n1,n2):d['label'] for n1,n2,d in G.edges(data=True)}
 nx.draw_networkx_edge_labels(G , pos, edge_labels=edge_labels)
+
+# On mets ça dans un fichier word 
 nx.drawing.nx_pydot.write_dot(G, 'pet_dog_markov.dot')
