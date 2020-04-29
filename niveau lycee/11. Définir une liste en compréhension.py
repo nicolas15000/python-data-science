@@ -29,5 +29,3 @@ m = [2,5,9,10]
 n = [x**2 for x in m] 
 print(n)
 
-
-
