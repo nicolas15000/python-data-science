@@ -31,7 +31,7 @@ qui récapitule bien les principaux problèmes rencontrés avec le solveur. Je v
 Chaines Youtube Françaises:<br>
 Machine Learnia https://www.youtube.com/channel/UCmpptkXu8iIFe6kfDK5o7VQ<br>
 Clipedia : https://www.youtube.com/channel/UCNwWU1hqK3q-DclufllWCfg<br>
-ProMath : https://www.youtube.com/channel/UC2flwAftkypBx2gLIamxwqg
+ProMath : https://www.youtube.com/channel/UC2flwAftkypBx2gLIamxwqg<br>
 Nicolas Br https://www.youtube.com/channel/UCzsU0h6kxkSSCqpXTRUHubg<br>
 Yvan Monka : https://www.youtube.com/user/YMONKA<br>
 Saïd Chermak : https://www.youtube.com/channel/UCppNXkk1sgDguxe8fQK9tng<br>
