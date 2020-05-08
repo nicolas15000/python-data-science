@@ -8,7 +8,10 @@ https://www.amazon.fr/Python-Data-Science-Dummies-Mueller/dp/1119547628
 
 <br>
 <b>French</b><br>
-Je vais stocker ici des scripts python de regression ainsi que mes résolutions de problèmes linéaires avec des solveurs. Certains seront repris, d'autres de moi...<br><br>
+
+Je stocke ici divers scripts de data science et de mathématiques probabilistes descriptives ou prédictives en Python , attention, pour l'instant, je n'ai qu'un niveau "1/5".
+
+Je vais donc stocker ici des scripts python de regression ainsi que mes résolutions de problèmes linéaires avec des solveurs. Certains seront repris, d'autres de moi...<br><br>
 C'est orienté "Cas réel d'utilisation", et pas théorie.
 Je vais en ajouter un paquet au fil du temps, en particulier, de l'import CSV avec de l'utilisation de solveurs linéaires .<br><br>
 L'idée étant de pouvoir résoudre un certain nombre de problèmes standards, les confirmer par comparaisons de résultats ( Par exemple, comparaison Excel solveur / Python Pulp), et de pouvoir les dériver/adapter un peu avec N variables de décision pour les solveurs, par exemple. Dans les 1ers, il peut y avoir des erreurs, c'est du stockage qui va s'améliorer au fil de temps.
