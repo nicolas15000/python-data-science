@@ -53,7 +53,7 @@ DE même, si lambda est basé sur 12 mois, on établit la pb sur les 12 mois sui
 
 # 1. Quelle est la probabilité qu'il y en ait ***MOINS *** de 6 défectueux le mois prochain
 # donc on ADDITIONNE LES PROBABILITES 
-#  P(x < 10, 8) = P(0; 8) + P(1; 8) + P(2; 8) + P(3; 8) + P(4; 8) + P(5; 8) + P(6; 8) 
+#  P(x < 6, 8) = P(0; 8) + P(1; 8) + P(2; 8) + P(3; 8) + P(4; 8) + P(5; 8) + P(6; 8) 
 
 # On se sert de la function cumulative de SCIPI :
 ma_probabilite =  poisson.cdf(6,8)
