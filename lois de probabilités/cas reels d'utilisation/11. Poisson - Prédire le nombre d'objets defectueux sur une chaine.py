@@ -90,7 +90,7 @@ Pour résoudre ce problème, nous devons trouver la probabilité que les tourist
 """
 
 # On se sert de la function cumulative de SCIPI :
-ma_probabilite =  poisson.cdf(4,5)
+ma_probabilite =  poisson.cdf(3,5)
 print("proba: ", ma_probabilite * 100 , '%')
 # proba:  44.049328506521256 % 
 
