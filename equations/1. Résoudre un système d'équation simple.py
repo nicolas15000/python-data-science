@@ -8,12 +8,15 @@ Résoudre :
 1. En utilisant les tableaux (Arrays) et la librairie numpy 
 2. En utilisant les symboles et la librairie sympy 
 
+
 Sources :
 Sympy documentation totale :
 https://scipy-lectures.org/packages/sympy.html
 
+https://alexandrugris.github.io/maths/2017/04/30/symbolic-maths-python.html
 
 https://apmonitor.com/che263/index.php/Main/PythonSolveEquations
+
 https://medium.com/@GalarnykMichael/solving-system-of-linear-equations-using-python-645ad1904cec
 """
 
@@ -32,3 +35,4 @@ eq1 = sp.Eq(x + y, 35)               # 1x + 1y = 35
 eq2 = sp.Eq(2*x + 4*y , 94)          # 2x + 4y = 94
 ans = sp.solve((eq1, eq2), (x, y))
 print("Mon couple de resultats est : ",ans)
+
