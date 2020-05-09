@@ -9,7 +9,7 @@ https://www.amazon.fr/Python-Data-Science-Dummies-Mueller/dp/1119547628
 <br>
 <b>French</b><br>
 
-Je stocke ici divers scripts de data science et de mathématiques probabilistes descriptives ou prédictives en Python , attention, pour l'instant, je n'ai qu'un niveau "1/5".
+Je stocke ici divers scripts de data science et de mathématiques descriptives ou prédictives en Python , attention, pour l'instant, je n'ai qu'un niveau "1/5".
 
 Je vais donc stocker ici des scripts python de regression ainsi que mes résolutions de problèmes linéaires avec des solveurs. Certains seront repris, d'autres de moi...<br><br>
 C'est orienté "Cas réel d'utilisation", et pas théorie.
