@@ -4,7 +4,7 @@
 
 """ Calculer des probabilités de masse OU cumulatives avec la loi de poisson.
 1. calculer la probabilité d'avoir EXACTEMENT un résultat-> pmf(k, mu, loc=0)Probability mass function.
-2. calculer la probabilité d'avoir AU MOINS un résultat ->  cdf(k, mu, loc=0) Cumulative distribution function.
+2. calculer la probabilité d'avoir MOINS d'un résultat ->  cdf(k, mu, loc=0) Cumulative distribution function.
 
 """
 
