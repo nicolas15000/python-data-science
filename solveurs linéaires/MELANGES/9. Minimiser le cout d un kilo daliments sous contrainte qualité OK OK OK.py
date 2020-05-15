@@ -14,6 +14,16 @@ Le mélange doit respecter les restrictions suivantes:
 
 Le problème est de trouver la composition du mix alimentaire qui satisfait à ces contraintes tout en minimisant les coûts.
 
+Ingredient
+	
+
+Ingredient Calcium Protein Fiber    Unit cost
+            (kg/kg) (kg/kg) (kg/kg) (cents/kg) 
+Farine       0.38   0.0     0.0     10.0 	
+Mais         0.001  0.09    0.02    30.5
+Soja         0.002  0.50    0.08    90.0
+
+
 *** Définitions des variables
 
 L, C, S: proportions de farine de calcaire, de maïs et de soja, respectivement, dans le mélange.
