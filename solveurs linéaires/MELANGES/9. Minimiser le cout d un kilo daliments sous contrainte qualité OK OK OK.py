@@ -116,7 +116,7 @@ for v in prob.variables():
     print (v.name, "=", v.varValue)
 
 # Le résultat de la fonction objectif :
-print ("Cout total des ingrédients par boite de conserve de 1kg = ", value(prob.objective))
+print ("Cout total des ingrédients par boite de conserve de 1kg = ", value(prob.objective), "Centimes")
 
 
 """ 
@@ -127,3 +127,5 @@ Ingr_SOJA = 0.32325701
 Cout total des ingrédients par boite de conserve de 1kg =  49.15629004
 
  """
+
+
