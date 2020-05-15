@@ -95,10 +95,10 @@ prob += lpSum([costs[i]*ingredient_vars[i] for i in Ingredients]), "Cout total d
 # La production totale est de 1 kg
 prob += lpSum([ingredient_vars[i] for i in Ingredients]) == 1 ,"conservation"
 
-# Nos contraintes de qualité pour pas créer un paté de mauvaise qualité ...
+# On spécifie au solveur PULP Nos contraintes de qualité pour ne pas créer un paté de mauvaise qualité ...
 prob += lpSum([calcium[i]    * ingredient_vars[i] for i in Ingredients]) >= 0.008, "calciumRequirementMin"
 prob += lpSum([calcium[i]    * ingredient_vars[i] for i in Ingredients]) <= 0.012, "calciumRequirementMax"
-prob += lpSum([protein[i]    * ingredient_vars[i] for i in Ingredients]) >= 0.22,  "fiberRequirementMin"
+prob += lpSum([protein[i]    * ingredient_vars[i] for i in Ingredients]) >= 0.22,  "proteinRequirementMin"
 prob += lpSum([fiber[i]      * ingredient_vars[i] for i in Ingredients]) <= 0.05,  "fiberRequirementMax"
 
 # POSSIBILITE Utilisation minimale en g par element
