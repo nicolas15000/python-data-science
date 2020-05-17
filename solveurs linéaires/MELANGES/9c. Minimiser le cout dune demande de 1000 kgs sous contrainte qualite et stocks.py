@@ -74,7 +74,7 @@ costs = {
             'SOJA':90.0
         }
 
-# cout d'un ingrédient (kg/kg) 
+# les stocks disponibles(kg/kg) 
 stocks = {
             'FARINE': 1000, 
             'MAIS': 500,
@@ -140,7 +140,7 @@ for v in prob.variables():
     print (v.name, "=", v.varValue)
 
 # Le résultat de la fonction objectif :
-print ("Cout total des ingrédients pour 1000kgs = ", value(prob.objective) * 100, "Euros")
+print ("Cout total des ingrédients pour 1kg = ", value(prob.objective) , "centimes")
 
 
 """ 
@@ -148,7 +148,7 @@ Status: Optimal
 Ingr_FARINE = 27.777778
 Ingr_MAIS = 500.0
 Ingr_SOJA = 472.22222
-Cout total des ingrédients pour 1000kgs =  5802777.757999999 Euros
+Cout total des ingrédients pour 1kg =  58027.777579999994 centimes
 
  """
 

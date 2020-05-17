@@ -136,7 +136,7 @@ for v in prob.variables():
     print (v.name, "=", v.varValue)
 
 # Le résultat de la fonction objectif :
-print ("Cout total des ingrédients pour 1000kgs = ", value(prob.objective) * 100, "Euros")
+print ("Cout total des ingrédients pour 1kg = ", value(prob.objective) , "centimes")
 
 
 """ 
@@ -144,7 +144,7 @@ Status: Optimal
 Ingr_FARINE = 28.170826
 Ingr_MAIS = 648.57216
 Ingr_SOJA = 323.25701
-Cout total des ingrédients pour 1000kgs =  491562.003999999 Euros
+Cout total des ingrédients pour 1kg =  49156.29003999999 centimes
  """
 
 
