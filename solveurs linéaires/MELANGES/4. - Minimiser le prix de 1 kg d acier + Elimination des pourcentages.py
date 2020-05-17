@@ -11,7 +11,8 @@ to make more money, but still respecting the minimum characteristics of quality 
 *** ESSAI 2 : ***
 
 Vu que le résultat ne correspond pas au résultat du livre et du solveur excel, 
-Je simplifie en commançant pas minimiser le prix de seulement 1kg d'acier .
+Je simplifie en commançant par minimiser le prix de seulement 1kg d'acier .
+Je ne tiens donc pas, pour l'instant, compte des stocks.
 
 1. Elimination de la contrainte de production minimale de 5000 kgs.
 2. On convertit tout les pourcentages par des valeurs en kgs On enlève les % .
