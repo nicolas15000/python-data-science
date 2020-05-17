@@ -144,7 +144,7 @@ Status: Optimal
 Ingr_FARINE = 28.170826
 Ingr_MAIS = 648.57216
 Ingr_SOJA = 323.25701
-Cout total des ingrédients pour 1kg =  49156.29003999999 centimes
+Cout total des ingrédients pour 1kg =  491.56290039999993 euros
  """
 
 
