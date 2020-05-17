@@ -54,13 +54,14 @@ Source originelle (EXCEL)
 https://www.me.utexas.edu/~jensen/ORMM/models/unit/linear/subunits/blending/index.html
 
 
-Ajout de 5000 kgs de demande et de stocks :
 
-Ingredient Calcium Protein Fiber    Unit cost   stock
+ **** VERSION B on ajoute 100 kgs de demande ! ***** 
+
+Ingredient Calcium Protein Fiber    Unit cost   
             (kg/kg) (kg/kg) (kg/kg) (cents/kg) 
-Farine       0.38   0.0     0.0     10.0 	    150    
-Mais         0.001  0.09    0.02    30.5        200
-Soja         0.002  0.50    0.08    90.0        300
+Farine       0.38   0.0     0.0     10.0 	        
+Mais         0.001  0.09    0.02    30.5        
+Soja         0.002  0.50    0.08    90.0        
 
 
 """
@@ -98,6 +99,8 @@ fiber = {
             'MAIS': 0.02,
             'SOJA':0.08
             }
+
+# La demande
 demande = 1000
 
 # On veut minimiser nos couts
