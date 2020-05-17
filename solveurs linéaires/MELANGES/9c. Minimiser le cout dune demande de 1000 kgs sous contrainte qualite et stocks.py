@@ -145,10 +145,10 @@ print ("Cout total des ingrédients pour 1000kgs = ", value(prob.objective) * 10
 
 """ 
 Status: Optimal
-Ingr_FARINE = 28.170826
-Ingr_MAIS = 648.57216
-Ingr_SOJA = 323.25701
-Cout total des ingrédients pour 1000kgs =  4915629.003999999 Euros
+Ingr_FARINE = 27.777778
+Ingr_MAIS = 500.0
+Ingr_SOJA = 472.22222
+Cout total des ingrédients pour 1000kgs =  5802777.757999999 Euros
 
  """
 
