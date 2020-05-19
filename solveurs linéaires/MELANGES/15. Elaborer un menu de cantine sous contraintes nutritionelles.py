@@ -51,7 +51,7 @@ proteines = dict(zip(aliments,df['Proteines (g)']))
 legumes = dict(zip(aliments,df['Legume (bool)']))
 
 # On crée ensuite nos variables
-aliments_vars = LpVariable.dicts("aliment",aliments,lowBound=0,cat='Continuous')
+aliments_vars = LpVariable.dicts("aliment",aliments,lowBound=0,cat='Integer')
 
 # Fonction objectif : Minimiser le cout du repas.
 prob += lpSum([costs[i]*aliments_vars[i] for i in aliments])
