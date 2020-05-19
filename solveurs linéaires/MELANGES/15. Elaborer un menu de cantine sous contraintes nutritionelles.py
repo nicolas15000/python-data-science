@@ -6,7 +6,7 @@ Minimiser le cout de production du menu d'une école, sous contraintes nutrition
 
 Phase 2 : Analyse et tests du script + passage en français complet.
 
-Tentative d'ajouter au moins 3 légumes en min .
+Tentative d'ajouter au moins 2 légumes en min, avec sa méthode .
 
 Source 
 
@@ -50,8 +50,12 @@ proteines = dict(zip(aliments,df['Proteines (g)']))
 # Créer un dictionnaire bool si cest un légume ou pas
 legumes = dict(zip(aliments,df['Legume (bool)']))
 
+
 # On crée ensuite nos variables
 aliments_vars = LpVariable.dicts("aliment",aliments,lowBound=0,cat='Integer')
+
+legumes_vars = LpVariable.dicts("Legume (bool)",aliments,0,1,cat='Integer')
+
 
 # Fonction objectif : Minimiser le cout du repas.
 prob += lpSum([costs[i]*aliments_vars[i] for i in aliments])
@@ -59,7 +63,7 @@ prob += lpSum([costs[i]*aliments_vars[i] for i in aliments])
 # legumes bool
 
 # On ajoute une contrainte pour quil y ait au moins 3 légumes :
-prob += lpSum([legumes[f] * aliments_vars[f] for f in aliments]) >= 3, "legumesMinimum"
+# prob += lpSum([legumes[f] * aliments_vars[f] for f in aliments]) >= 3, "legumesMinimum"
 
 # for p in aliments:
 #   prob += aliments_vars[p] <= legumes[p], f"min legumes  {p}"
@@ -83,11 +87,16 @@ prob += lpSum([fibres[f] * aliments_vars[f] for f in aliments]) >= 120.0, "fibre
 prob += lpSum([fibres[f] * aliments_vars[f] for f in aliments]) <= 150.0, "fibresMaximum"
 
 # proteines
-print(lpSum([proteines[f] * aliments_vars[f] for f in aliments]))
 prob += lpSum([proteines[f] * aliments_vars[f] for f in aliments]) >= 80.0, "proteinesMinimum"
 prob += lpSum([proteines[f] * aliments_vars[f] for f in aliments]) <= 150.0, "proteinesMaximum"
 
+#legumes
 
+for f in aliments:
+    prob += aliments_vars[f] >= legumes_vars[f]*0.1
+    prob += aliments_vars[f] <= legumes_vars[f]*1e5
+
+prob += legumes_vars['Mais']+legumes_vars['Haricots'] >= 2
 
 prob.writeLP("problemeCantine.lp")
 
@@ -108,11 +117,18 @@ print("Le cout total de ce repas est de : Euros{}".format(round(obj,2)))
 
 
 """ 
-Status: Optimal
-aliment_Broccolis = 14.117647
-aliment_Bœuf = 1.1432109
-aliment_Cookie_au_chocoloat = 0.11974582
-aliment_Œufs_pochés = 4.5936886
+Status: Infeasible
+Legume_(bool)_Broccolis = 0.00014056471
+Legume_(bool)_Bœuf = 3.7420065e-05
+Legume_(bool)_Haricots = 1.0
+Legume_(bool)_Mais = 1.0
+Legume_(bool)_Œufs_pochés = 1.0645752e-06
+aliment_Broccolis = 14.056471
+aliment_Bœuf = 3.7420065
+aliment_Haricots = 0.1
+aliment_Mais = 0.1
+aliment_Œufs_pochés = 0.10645752
+Le cout total de ce repas est de : Euros9.84
  """
 
 
