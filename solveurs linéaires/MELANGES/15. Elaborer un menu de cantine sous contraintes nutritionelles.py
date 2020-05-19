@@ -101,6 +101,10 @@ for v in prob.variables():
      if v.varValue>0:
         print(v.name, "=", v.varValue)
 
+# On affiche le prix du repas
+obj = value(prob.objective)
+print("Le cout total de ce repas est de : Euros{}".format(round(obj,2)))
+
 
 
 """ 
