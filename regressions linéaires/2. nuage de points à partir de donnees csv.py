@@ -1,34 +1,34 @@
-# https://mrmint.fr/regression-lineaire-python-pratique
-
+# https://www.stat4decision.com/fr/faire-regression-lineaire-r-python/
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from scipy import stats
 
-df = pd.read_csv("dataset/univariate_linear_regression_dataset.csv")
+#importer les données Advertising.csv
+donnees = pd.read_csv('dataset\Advertising.csv', index_col=0)
+donnees.head()
 
-#selection de la première colonne de notre dataset (la taille de la population)
-X = df.iloc[0:len(df),0]
-#selection de deuxième colonnes de notre dataset (le profit effectué)
-Y = df.iloc[0:len(df),1] 
+from sklearn.linear_model import LinearRegression
 
+#créer un objet reg lin
+modeleReg=LinearRegression()
 
-# On dessine les points x y des datas de nos 2 colonnes dans le graphique
-axes = plt.axes()
-axes.grid() # dessiner une grille pour une meilleur lisibilité du graphe
-plt.scatter(X,Y) # X et Y sont les variables qu'on a extraite dans le paragraphe précédent
+#créer y et X
+list_var=donnees.columns.drop("Sales")
+y=donnees.Sales
+X=donnees[list_var]
 
-# Maintenant, on fait une régression :
-#linregress() renvoie plusieurs variables de retour. On s'interessera 
-# particulierement au slope et intercept
-slope, intercept, r_value, p_value, std_err = stats.linregress(X, Y)
+modeleReg.fit(X,y)
 
-def predict(x):
-	return slope * x + intercept
-   
-#la variable fitLine sera un tableau de valeurs prédites depuis la tableau de variables X
-fitLine = predict(X)
-plt.plot(X, fitLine, c='r') 
+print(modeleReg.intercept_)
+print(modeleReg.coef_)
 
-# Afficher les variables du fichier EXCEL ET la fitline qui est la regression linéaire des 2 colonnes qu'on a choisi'.
+#calcul du R²
+modeleReg.score(X,y)
+
+RMSE=np.sqrt(((y-modeleReg.predict(X))**2).sum()/len(y))
+
+plt.plot(y, modeleReg.predict(X),'.')
 plt.show()
 
+plt.plot(y, y-modeleReg.predict(X),'.')
+plt.show()
