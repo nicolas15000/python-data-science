@@ -5,6 +5,8 @@ Réaliser une prédiction unique à l'aide d'une régression linéaire sur un da
 
 on peut aussi réaliser un tableau de prédictions.
 
+****** Code le plus simplifié possible, sans import EXCEL préalable. *****
+
 On nous donne une valeur X, on peut alors prédire la valeur Y, par ce que l'on connait les ANCIENNES VALEURS dans le temps, et que SKLEARN 
 
 dispose de l'algo de régression linéaire .
