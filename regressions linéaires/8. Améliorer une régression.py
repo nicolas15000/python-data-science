@@ -28,3 +28,6 @@ plt.plot(x, model.predict(x), c='red', lw = 3)
 plt.show()
 
 # 𝑅2 = 94%
+
+
+# Pour rappel: la méthode la plus simple pour réaliser une régression est décrite dans le numéro 3

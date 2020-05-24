@@ -1,4 +1,5 @@
-""" Problème de paté avec des contraintes qualité protéine et gras .
+""" 
+Problème de paté avec des contraintes qualité protéine et gras .
 
 Version avec des vecteurs 
 
