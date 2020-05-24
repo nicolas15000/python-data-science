@@ -1,8 +1,11 @@
 """ 
 
-On veut calculer le plus court chemin, dans un graphe valué.
+On veut calculer le plus court chemin, dans un graphe valué , mais non orienté.
 
 Dans cet exemple, on utilise shortest_path() de la librairie networkX.
+
+Voici les différents algos de distance disponibles avec networkX (Djikstra, Bellman etc ...):
+https://networkx.github.io/documentation/stable/reference/algorithms/shortest_paths.html
 
 Source et doc :
 https://networkx.github.io/documentation/stable/tutorial.html
