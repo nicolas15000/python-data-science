@@ -18,15 +18,7 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 
-# 1. On charge nos données en abscysse et ordonnées
-
-
-# x = np.array([16884, 1725, 4449, 21984, 3866]).reshape((-1, 1))
-
-# 3. On place les variables caractéristiques / 'features' dans leurs vecteurs respectifs , les caractéristiques ou 'features' sont les variables qui vont servir à "prédire".
-# age = np.array([19,18,28,33,32])
-# creditconfiance = np.array([27,42,33,22,28])
-# enfants = np.array([0,1,3,0,0])
+# 1. On crée nos données au format JSON
 
 data = {
 'salaire':[16880, 14220, 24500, 25984, 28660,35600],
@@ -35,10 +27,10 @@ data = {
 'enfant':[0,1,3,0,0,1]
 }
 
+# On fait comme si on chargeait un tableau EXCEL ...
 df = pd.DataFrame(data,columns=['salaire','age','credit_confiance','enfant'])
 
-
-# On regarde si il existe une relation linéaire entre le salaire et l'age
+# On vérifie si il existe une relation linéaire entre le salaire et l'age
 plt.scatter(df['age'], df['salaire'], color='red')
 plt.title('age vs Salaire', fontsize=14)
 plt.xlabel('salaires', fontsize=14)
@@ -47,14 +39,13 @@ plt.grid(True)
 plt.show()
 
 
-# On regarde si il existe une relation linéaire entre le salaire et le crédit confiance
+# On vérifie si il existe une relation linéaire entre le salaire et le crédit confiance
 plt.scatter(df['credit_confiance'], df['salaire'], color='red')
 plt.title('credit_confiance vs Salaire', fontsize=14)
 plt.xlabel('salaires', fontsize=14)
 plt.ylabel('credit_confiance', fontsize=14)
 plt.grid(True)
 plt.show()
-
 
 
 #  On place dans X le vecteur salaire et age, et dans le vecteur Y le vecteur des crédits confiances. NOTE : j'ai l'impression que c'est à l'envers, à vérifier.
