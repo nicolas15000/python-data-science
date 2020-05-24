@@ -33,7 +33,7 @@ model.fit(x, y)
 # 4. On veut prédire notre valeur y, en lui fournissant une valeur x (Super pour les scripts d'apps webs): 
 print(model.predict([[2000]]))
 
-# 5. On veut prédire notre valeur y, en lui fournissant plusieurs valeurs x : 
+# 5. On veut prédire nos valeurs y, en lui fournissant plusieurs valeurs x : 
 X_new = np.array([1, 2000, 3, 4, 5, 26, 7]).reshape(-1, 1)
 print(model.predict(X_new))
 
