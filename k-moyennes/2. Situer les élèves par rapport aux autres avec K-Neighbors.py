@@ -10,4 +10,7 @@ Ou alors avec un algorithme perso, je ne sais pas encore comment !!
 
 A FAIRE 
 
+EDIT : La solution est ici :
+https://datascience.stackexchange.com/questions/48693/perform-k-means-clustering-over-multiple-columns
+
 """
