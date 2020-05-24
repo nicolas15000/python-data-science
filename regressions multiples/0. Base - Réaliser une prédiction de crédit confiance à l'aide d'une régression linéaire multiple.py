@@ -48,7 +48,7 @@ plt.grid(True)
 plt.show()
 
 
-#  On place dans X le vecteur salaire et age, et dans le vecteur Y le vecteur des crédits confiances. NOTE : j'ai l'impression que c'est à l'envers, à vérifier.
+#  On place dans X le vecteur salaire et age, et dans le vecteur Y le vecteur des crédits confiances. 
 X = df[['salaire','age']] # here we have 2 variables for multiple regression. If you just want to use one variable for simple linear regression, then use X = df['Interest_Rate'] for example.Alternatively, you may add additional variables within the brackets
 Y = df['credit_confiance']
  
