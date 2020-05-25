@@ -38,7 +38,7 @@ L'idée étant de pouvoir résoudre un certain nombre de problèmes génériques
 
 <b>Liens et références</b><br>
 Merci au livre https://www.eyrolles.com/Informatique/Livre/programmation-lineaire-avec-excel-9782212126594/<br>
-qui récapitule bien les principaux problèmes rencontrés avec le solveur. Je voudrais les transcrire en Python dès que possible ...Le problème étant que l'auteur ayant utilisé la plupart du temps des doubles tableaux, c'est assez difficile à retranscrire pour l'instant pour moi, je suis dessus. Normalement, à partir du moment ou le modèle mathématique est correct, on doit pouvoir entrer le P.L avec tous les solveurs ..<br><br>
+qui récapitule bien les principaux problèmes rencontrés avec le solveur. Je voudrais les transcrire en Python dès que possible ...Le problème étant que les modèles dans ce livre traitent souvent de plusieurs matériels en même temps ( exemple : Génération de 2 alliage en même temps, sous contraintes divergentes ) , c'est assez difficile à retranscrire pour l'instant pour moi, je suis dessus. Normalement, à partir du moment ou le modèle mathématique est correct, on doit pouvoir entrer le P.L avec tous les solveurs ..<br><br>
 
 Egalement le livre : <br><br>
 https://www.springer.com/gp/book/9782287302787<br>
