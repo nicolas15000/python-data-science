@@ -18,7 +18,7 @@ Je stocke ici des scripts de data science et de mathématiques descriptives ou p
 <b>Les scripts possédant la lettre C au début de leur noms ont un statut confirmé.</b><br>
 <b>Les scripts possédant l'attribut BASE au début de leurs noms sont les plus simples et fiables.</b><br>
 <b>Les scripts possédant la lettre KO au début de leurs noms ont un statut à vérifier ou en défaut.</b>
-<br><br>
+<br>
 
 Je vais en ajouter un paquet au fil du temps, en particulier, de l'import CSV avec de l'utilisation de solveurs linéaires .<br>
 L'idée étant de pouvoir résoudre un certain nombre de problèmes génériques, de les confirmer par comparaisons de résultats ( Par exemple, comparaison Excel solveur / Python Pulp), puis de pouvoir les dériver/adapter un peu avec N variables de décision pour les solveurs linéaires, par exemple. Certains scripts sont de moi, d'autres proviennent d'auteurs internet ou de livres.
