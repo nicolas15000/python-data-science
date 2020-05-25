@@ -17,7 +17,7 @@ Files with the KO letters at the beginning of their names have a result to check
 Je stocke ici des scripts de data science et de mathématiques descriptives ou prédictives en Python .
 <br><br>
 <b>Les scripts possédant la lettre C au début de leur noms ont un statut confirmé.</b><br>
-<b>Les scripts possédant l'attribut BASE au début de leurs noms sont les plus simples et fiables.</b>
+<b>Les scripts possédant l'attribut BASE au début de leurs noms sont les plus simples et fiables.</b><br>
 <b>Les scripts possédant la lettre KO au début de leurs noms ont un statut à vérifier ou en défaut.</b>
 <br><br>
 Je vais donc stocker ici des scripts python de regression ainsi que mes résolutions de problèmes linéaires avec des solveurs. Certains seront repris, d'autres de moi...<br><br>
