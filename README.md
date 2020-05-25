@@ -7,11 +7,23 @@ Thanks to this nice book :
 https://www.amazon.fr/Python-Data-Science-Dummies-Mueller/dp/1119547628
 
 <br>
+<br> <br>
+Files with the letter C at the start of their names have confirmed results. <br>
+Files with the letter E at the beginning of their names have a result to check or fail.
+<br> <br>
+
+
 <b>French</b><br>
 
 Je stocke ici divers scripts de data science et de mathématiques descriptives ou prédictives en Python .
 
+<br><br>
+Les fichers possédant la lettre C au début de leur noms ont un résultat confirmé.<br>
+Les fichiers possédant la lettre E au début de leurs noms ont un résultat à vérifier ou en défaut .
+<br><br>
 Je vais donc stocker ici des scripts python de regression ainsi que mes résolutions de problèmes linéaires avec des solveurs. Certains seront repris, d'autres de moi...<br><br>
+
+
 C'est orienté "Cas réel d'utilisation", et pas théorie.
 Je vais en ajouter un paquet au fil du temps, en particulier, de l'import CSV avec de l'utilisation de solveurs linéaires .<br><br>
 L'idée étant de pouvoir résoudre un certain nombre de problèmes standards, les confirmer par comparaisons de résultats ( Par exemple, comparaison Excel solveur / Python Pulp), et de pouvoir les dériver/adapter un peu avec N variables de décision pour les solveurs, par exemple. Dans les 1ers, il peut y avoir des erreurs, c'est du stockage qui va s'améliorer au fil de temps.
