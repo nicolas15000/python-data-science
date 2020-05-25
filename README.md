@@ -13,7 +13,6 @@ Files with the KO letters at the beginning of their names have a result to check
 <br> <br>
 
 <b>Français/French</b><br>
-
 Je stocke ici des scripts de data science et de mathématiques descriptives ou prédictives en Python.
 <br><br>
 <b>Les scripts possédant la lettre C au début de leur noms ont un statut confirmé.</b><br>
@@ -34,7 +33,7 @@ L'idée étant de pouvoir résoudre un certain nombre de problèmes génériques
 * pyschedule https://github.com/timnon/pyschedule<br>
 * Survival regression https://lifelines.readthedocs.io/en/latest/Survival%20Regression.html#the-dataset-for-regression <br><br>
 
-<b>Liens et références</b><br><br>
+<b>Liens et références</b>
 Merci au livre https://www.eyrolles.com/Informatique/Livre/programmation-lineaire-avec-excel-9782212126594/<br>
 qui récapitule bien les principaux problèmes rencontrés avec le solveur. Je voudrais les transcrire en Python dès que possible ...Le problème étant que les modèles dans ce livre traitent souvent de plusieurs matériels en même temps ( exemple : Génération de 2 alliages en même temps, sous 4 contraintes divergentes ) , c'est assez difficile à retranscrire pour l'instant pour moi, je suis dessus. Normalement, à partir du moment ou le modèle mathématique est correct, on doit pouvoir entrer le P.L avec tous les solveurs ..<br>
 
@@ -42,7 +41,7 @@ Egalement le livre : <br>
 https://www.springer.com/gp/book/9782287302787<br>
 Conseillé pour l'UE STA001 du Cnam.<br><br>
 
-<b>Les Chaines Youtube Françaises:</b><br>
+<b>Les Chaines Youtube Françaises:</b>
 Machine Learnia https://www.youtube.com/channel/UCmpptkXu8iIFe6kfDK5o7VQ<br>
 Clipedia : https://www.youtube.com/channel/UCNwWU1hqK3q-DclufllWCfg<br>
 ProMath : https://www.youtube.com/channel/UC2flwAftkypBx2gLIamxwqg<br>
