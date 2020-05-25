@@ -22,7 +22,7 @@ Je stocke ici des scripts de data science et de mathématiques descriptives ou p
 <br><br>
 
 Je vais en ajouter un paquet au fil du temps, en particulier, de l'import CSV avec de l'utilisation de solveurs linéaires .<br>
-L'idée étant de pouvoir résoudre un certain nombre de problèmes génériques, de les confirmer par comparaisons de résultats ( Par exemple, comparaison Excel solveur / Python Pulp), puis de pouvoir les dériver/adapter un peu avec N variables de décision pour les solveurs linéaires, par exemple. Certains scripts sont de moi, d'autres proviennent d'internet ou de livres.
+L'idée étant de pouvoir résoudre un certain nombre de problèmes génériques, de les confirmer par comparaisons de résultats ( Par exemple, comparaison Excel solveur / Python Pulp), puis de pouvoir les dériver/adapter un peu avec N variables de décision pour les solveurs linéaires, par exemple. Certains scripts sont de moi, d'autres proviennent d'auteurs internet ou de livres.
 
 <b>Librairies utilisées</b>
 * numpy<br>
