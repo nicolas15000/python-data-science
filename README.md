@@ -52,6 +52,7 @@ Science4All : https://www.youtube.com/watch?v=Jf40Xd52NyQ
 
 <br>
 
+<b>Liens et références (Suite)</b><br>
 A regarder également le super dépot Columbia-Intro-Data-Science avec tout le travail d'étudiants de Columbia dans ce domaine avec Python.<br>
 
 https://github.com/Columbia-Intro-Data-Science<br>
