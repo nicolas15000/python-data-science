@@ -1,5 +1,5 @@
 # PYTHON DATA SCIENCE SCRIPTS EN FRANCAIS
-![Screenshot](icon.png)
+![Screenshot](icon.png)<br>
 <b>English</b><br>
 Some ordered python regressions and linear solvers studies scripts, some are mine, others are from various authors and translated into french <br><br>
 My wish is to call theses scripts from my node vue starter, later, with a Flask server.<br>
@@ -14,17 +14,16 @@ Files with the letter E at the beginning of their names have a result to check o
 
 <b>French</b><br>
 
-Je stocke ici divers scripts de data science et de mathématiques descriptives ou prédictives en Python .
+Je stocke ici des scripts de data science et de mathématiques descriptives ou prédictives en Python .
 <br><br>
 Les scripts possédant la lettre C au début de leur noms ont un résultat confirmé.<br>
 Les scripts possédant la lettre E au début de leurs noms ont un résultat à vérifier ou en défaut .
 <br><br>
 Je vais donc stocker ici des scripts python de regression ainsi que mes résolutions de problèmes linéaires avec des solveurs. Certains seront repris, d'autres de moi...<br><br>
 
-
 C'est orienté "Cas réel d'utilisation", et pas théorie.
 Je vais en ajouter un paquet au fil du temps, en particulier, de l'import CSV avec de l'utilisation de solveurs linéaires .<br><br>
-L'idée étant de pouvoir résoudre un certain nombre de problèmes standards, les confirmer par comparaisons de résultats ( Par exemple, comparaison Excel solveur / Python Pulp), et de pouvoir les dériver/adapter un peu avec N variables de décision pour les solveurs, par exemple. Dans les 1ers, il peut y avoir des erreurs, c'est du stockage qui va s'améliorer au fil de temps.
+L'idée étant de pouvoir résoudre un certain nombre de problèmes génériques, de les confirmer par comparaisons de résultats ( Par exemple, comparaison Excel solveur / Python Pulp), puis de pouvoir les dériver/adapter un peu avec N variables de décision pour les solveurs, par exemple. 
 
 * numpy<br>
 * matplotlib<br>
