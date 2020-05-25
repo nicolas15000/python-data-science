@@ -1,99 +1,108 @@
 """
+Script de solveur linéaire pour optimiser le transport d'acier entre les fournisseurs et les usines.
+Problème linéaire de 'supply Chain'.
+
+Source :
 The American Steel Problem for the PuLP Modeller
 Authors: Antony Phillips, Dr Stuart Mitchell  2007
+
 """
 
-# Import PuLP modeller functions
+# 1. On importe les librairies
 from pulp import *
 
-# List of all the nodes
-Nodes = ["Youngstown",
-         "Pittsburgh",
-         "Cincinatti",
-         "Kansas City",
-         "Chicago",
-         "Albany",
-         "Houston",
-         "Tempe",
-         "Gary"]
+# 2. On liste les noeuds : Les usines fournisseurs ET les magasins.
+Nodes = ["Paris",
+         "Lille",
+         "Rennes",
+         "Strasbourg",
+         "Lorient",
+         "Nice",
+         "Bordeaux",
+         "Bruxelles",
+         "Toulouse"]
 
-nodeData = {# NODE        Supply Demand
-         "Youngstown":    [10000,0],
-         "Pittsburgh":    [15000,0],
-         "Cincinatti":    [0,0],
-         "Kansas City":   [0,0],
-         "Chicago":       [0,0],
-         "Albany":        [0,3000],
-         "Houston":       [0,7000],
-         "Tempe":         [0,4000],
-         "Gary":          [0,6000]}
+# 3. On spécifie la quantité d'acier disponible et la demande en quantité des noeuds.
+nodeData = {# NODE          Disponible Demande
+         "Paris":           [10000,0],
+         "Lille":           [15000,0],
+         "Rennes":          [0,0],
+         "Strasbourg":      [0,0],
+         "Lorient":         [0,0],
+         "Nice":            [0,3000],
+         "Bordeaux":        [0,7000],
+         "Bruxelles":       [0,4000],
+         "Toulouse":        [0,6000]}
 
-# List of all the arcs
-Arcs = [("Youngstown","Albany"),
-        ("Youngstown","Cincinatti"),
-        ("Youngstown","Kansas City"),
-        ("Youngstown","Chicago"),
-        ("Pittsburgh","Cincinatti"),
-        ("Pittsburgh","Kansas City"),
-        ("Pittsburgh","Chicago"),
-        ("Pittsburgh","Gary"),
-        ("Cincinatti","Albany"),
-        ("Cincinatti","Houston"),
-        ("Kansas City","Houston"),
-        ("Kansas City","Tempe"),
-        ("Chicago","Tempe"),
-        ("Chicago","Gary")]
+# Liste des arrêtes entre les noeuds
+Arcs = [("Paris","Nice"),
+        ("Paris","Rennes"),
+        ("Paris","Strasbourg"),
+        ("Paris","Lorient"),
+        ("Lille","Rennes"),
+        ("Lille","Strasbourg"),
+        ("Lille","Lorient"),
+        ("Lille","Toulouse"),
+        ("Rennes","Nice"),
+        ("Rennes","Bordeaux"),
+        ("Strasbourg","Bordeaux"),
+        ("Strasbourg","Bruxelles"),
+        ("Lorient","Bruxelles"),
+        ("Lorient","Toulouse")]
 
-arcData = { #      ARC                Cost Min Max
-        ("Youngstown","Albany"):      [0.5,0,1000],
-        ("Youngstown","Cincinatti"):  [0.35,0,3000],
-        ("Youngstown","Kansas City"): [0.45,1000,5000],
-        ("Youngstown","Chicago"):     [0.375,0,5000],
-        ("Pittsburgh","Cincinatti"):  [0.35,0,2000],
-        ("Pittsburgh","Kansas City"): [0.45,2000,3000],
-        ("Pittsburgh","Chicago"):     [0.4,0,4000],
-        ("Pittsburgh","Gary"):        [0.45,0,2000],
-        ("Cincinatti","Albany"):      [0.35,1000,5000],
-        ("Cincinatti","Houston"):     [0.55,0,6000],
-        ("Kansas City","Houston"):    [0.375,0,4000],
-        ("Kansas City","Tempe"):      [0.65,0,4000],
-        ("Chicago","Tempe"):          [0.6,0,2000],
-        ("Chicago","Gary"):           [0.12,0,4000]}
+# On value les arrêtes par un cout, et la quantité de matière qui peut y transiter.
+arcData = { #      ARC                Cout Min Max
+        ("Paris","Nice"):             [0.5,0,1000],
+        ("Paris","Rennes"):           [0.35,0,3000],
+        ("Paris","Strasbourg"):       [0.45,1000,5000],
+        ("Paris","Lorient"):          [0.375,0,5000],
+        ("Lille","Rennes"):           [0.35,0,2000],
+        ("Lille","Strasbourg"):       [0.45,2000,3000],
+        ("Lille","Lorient"):          [0.4,0,4000],
+        ("Lille","Toulouse"):         [0.45,0,2000],
+        ("Rennes","Nice"):            [0.35,1000,5000],
+        ("Rennes","Bordeaux"):        [0.55,0,6000],
+        ("Strasbourg","Bordeaux"):    [0.375,0,4000],
+        ("Strasbourg","Bruxelles"):   [0.65,0,4000],
+        ("Lorient","Bruxelles"):      [0.6,0,2000],
+        ("Lorient","Toulouse"):       [0.12,0,4000]}
 
-# Splits the dictionaries to be more understandable
+# On sépare les dictionnaires pour que ce soit mieux compréhensible.
 (supply, demand) = splitDict(nodeData)
 (costs, mins, maxs) = splitDict(arcData)
 
+# On spécifie que les variables sont au format integer
 # Creates the boundless Variables as Integers
 vars = LpVariable.dicts("Route",Arcs,None,None,LpInteger)
 
-# Creates the upper and lower bounds on the variables
+# Crée les limites supérieure et inférieure des variables (?)
 for a in Arcs:
     vars[a].bounds(mins[a], maxs[a])
 
-# Creates the 'prob' variable to contain the problem data    
-prob = LpProblem("American Steel Problem",LpMinimize)
+# On spécifie que c'est un problème de minimisation 
+prob = LpProblem("Probleme de transport acier",LpMinimize)
 
-# Creates the objective function
-prob += lpSum([vars[a]* costs[a] for a in Arcs]), "Total Cost of Transport"
+# La fonction objectif est diminuer le cout total du transport , tout en saturant la demande des noeuds des magasins.
+prob += lpSum([vars[a]* costs[a] for a in Arcs]), "Coût total du transport"
 
-# Creates all problem constraints - this ensures the amount going into each node is at least equal to the amount leaving
+# Crée toutes les contraintes du problème - cela garantit que le montant entrant dans chaque nœud est au moins égal au montant restant. (?)
+# la loi de conservation du flot : https://fr.wikipedia.org/wiki/Lois_de_Kirchhoff
 for n in Nodes:
     prob += (supply[n]+ lpSum([vars[(i,j)] for (i,j) in Arcs if j == n]) >=
-             demand[n]+ lpSum([vars[(i,j)] for (i,j) in Arcs if i == n])), "Steel Flow Conservation in Node %s"%n
+             demand[n]+ lpSum([vars[(i,j)] for (i,j) in Arcs if i == n])), "Conservation du flot d'acier dans le nœud %s"%n
 
-# The problem data is written to an .lp file
-prob.writeLP("AmericanSteelProblem.lp")
+# On écrite le résumé du LP dans un fichier.
+prob.writeLP("TransportProblem.lp")
 
-# The problem is solved using PuLP's choice of Solver
+# On résouds le problème en utilisant le soolveur de notre choix en paramêtre.
 prob.solve()
 
-# The status of the solution is printed to the screen
-print("Status:", LpStatus[prob.status])
+# Le status de la solution est imprimé à l'écran .
+print("Statut:", LpStatus[prob.status])
 
-# Each of the variables is printed with it's resolved optimum value
+# Chaque variable est affichée avec son statut maximal.
 for v in prob.variables():
     print(v.name, "=", v.varValue)
 
-# The optimised objective function value is printed to the screen    
-print("Total Cost of Transportation = ", value(prob.objective))
+# La valeur de la fonction objectif optimisée est imprimée à l'écran 
+print("Le cout total du transport est de  = ", value(prob.objective))
