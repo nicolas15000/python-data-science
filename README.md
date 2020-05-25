@@ -8,7 +8,7 @@ Thanks to this nice book :
 https://www.amazon.fr/Python-Data-Science-Dummies-Mueller/dp/1119547628
 
 <br>
-Files with the letter C at the start of their names have confirmed results. <br>
+Files with the letter C at the start of their names have confirmed status. <br>
 Files with the letter E at the beginning of their names have a result to check or fail.
 <br> <br>
 
@@ -16,8 +16,8 @@ Files with the letter E at the beginning of their names have a result to check o
 
 Je stocke ici des scripts de data science et de mathématiques descriptives ou prédictives en Python .
 <br><br>
-Les scripts possédant la lettre C au début de leur noms ont un résultat confirmé.<br>
-Les scripts possédant la lettre E au début de leurs noms ont un résultat à vérifier ou en défaut .
+<b>Les scripts possédant la lettre C au début de leur noms ont un statut confirmé.</b><br>
+<b>Les scripts possédant la lettre E au début de leurs noms ont un statut à vérifier ou en défaut.</b>
 <br><br>
 Je vais donc stocker ici des scripts python de regression ainsi que mes résolutions de problèmes linéaires avec des solveurs. Certains seront repris, d'autres de moi...<br><br>
 
@@ -40,7 +40,11 @@ L'idée étant de pouvoir résoudre un certain nombre de problèmes génériques
 Merci au livre https://www.eyrolles.com/Informatique/Livre/programmation-lineaire-avec-excel-9782212126594/<br>
 qui récapitule bien les principaux problèmes rencontrés avec le solveur. Je voudrais les transcrire en Python dès que possible ...Le problème étant que l'auteur ayant utilisé la plupart du temps des doubles tableaux, c'est assez difficile à retranscrire pour l'instant pour moi, je suis dessus. Normalement, à partir du moment ou le modèle mathématique est correct, on doit pouvoir entrer le P.L avec tous les solveurs ..<br><br>
 
-Chaines Youtube Françaises:<br>
+Egalement le livre : <br><br>
+https://www.springer.com/gp/book/9782287302787<br>
+Cnopseillé pour l'UE STA001 du Cnam.<br>
+
+<b>Les Chaines Youtube Françaises:</b><br>
 Machine Learnia https://www.youtube.com/channel/UCmpptkXu8iIFe6kfDK5o7VQ<br>
 Clipedia : https://www.youtube.com/channel/UCNwWU1hqK3q-DclufllWCfg<br>
 ProMath : https://www.youtube.com/channel/UC2flwAftkypBx2gLIamxwqg<br>
