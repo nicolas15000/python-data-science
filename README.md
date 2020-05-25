@@ -7,7 +7,6 @@ Thanks to this nice book :
 https://www.amazon.fr/Python-Data-Science-Dummies-Mueller/dp/1119547628
 
 <br>
-<br> <br>
 Files with the letter C at the start of their names have confirmed results. <br>
 Files with the letter E at the beginning of their names have a result to check or fail.
 <br> <br>
