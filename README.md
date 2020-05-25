@@ -12,14 +12,12 @@ Files with the letter C at the start of their names have confirmed results. <br>
 Files with the letter E at the beginning of their names have a result to check or fail.
 <br> <br>
 
-
 <b>French</b><br>
 
 Je stocke ici divers scripts de data science et de mathématiques descriptives ou prédictives en Python .
-
 <br><br>
-Les fichers possédant la lettre C au début de leur noms ont un résultat confirmé.<br>
-Les fichiers possédant la lettre E au début de leurs noms ont un résultat à vérifier ou en défaut .
+Les scripts possédant la lettre C au début de leur noms ont un résultat confirmé.<br>
+Les scripts possédant la lettre E au début de leurs noms ont un résultat à vérifier ou en défaut .
 <br><br>
 Je vais donc stocker ici des scripts python de regression ainsi que mes résolutions de problèmes linéaires avec des solveurs. Certains seront repris, d'autres de moi...<br><br>
 
