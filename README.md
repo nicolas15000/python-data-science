@@ -42,7 +42,7 @@ qui récapitule bien les principaux problèmes rencontrés avec le solveur. Je v
 
 Egalement le livre : <br><br>
 https://www.springer.com/gp/book/9782287302787<br>
-Cnopseillé pour l'UE STA001 du Cnam.<br>
+Conseillé pour l'UE STA001 du Cnam.<br>
 
 <b>Les Chaines Youtube Françaises:</b><br>
 Machine Learnia https://www.youtube.com/channel/UCmpptkXu8iIFe6kfDK5o7VQ<br>
