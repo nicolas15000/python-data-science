@@ -19,8 +19,19 @@ P(a <= X <= b) = ⅇ ^-Λa  - ⅇ ^-Λb
 
 E(x) = 1 / Λ
 -> Veut dire l'espérance de la probabilité de x est de 1 divisé par lambda  
+-> Cela permet de calculer Λ, car souvent, on nous donne une durée de vie moyenne (E(x)).
+
 
 La distribution exponentielle est la seule distribution continue qui possède la propriété sans mémoire.
+Pour tout t >= 0 et tout a >= 0 On a P X>=a(X>=a+t) = P(X>=t) 
+Autrement dit, on ne tient pas pas compte de a (qui représente Le passé) 
+Le passé n'influe pas sur le futur.
+
+Λ (SE DIT LAMBDA) se lit en lisant la valeur de l'ordonnée sur le schéma.
+
+Autre excellent lien : 
+http://www.jaicompris.com/lycee/math/probabilite/loi-exponentielle.php
+http://www.jybaudot.fr/Probas/propriexpo.html
 
 """
 
@@ -42,3 +53,13 @@ pb = 1 - math.exp(- 0.125 * 3 )
 print(pb)
 # 0.31271072120902776
 
+# La durée de vie d'un ordi exprimée en années est une variable aléatoire X suivant la loi exponentielle de paramètre ^ = 0.125
+
+""" Quelle est la pb que la durée de vie de cet ordinateur portable dépasse 5 ans sachant qu'il fonctionne déjà depuis 2 ans ? """
+
+# -> On ne s'occupe pas des 2 ans, car pas de mémoire
+# P x<=2(X>=5) = P(X>=3) = e^-0.125*3 = 0.687
+
+pb = math.exp(- 0.125 * 3 )   
+print(pb)
+# 0.6872892787909722
