@@ -25,9 +25,9 @@ G = nx.Graph()
 G.add_nodes_from(['A', 'B', 'C', 'D', 'E', 'F'])
 
 # On ajoute une liste d' arrêtes valuées
-G.add_edges_from([('A', 'B', {'marche': 25, 'temps': 300}), ('A', 'C', {'metro': 4, 'temps': 4}), ('A', 'D', {'marche': 3, 'temps': 30}), 
-                  ('C', 'E', {'marche': 3, 'temps': 30}), ('D', 'E', {'marche': 3, 'temps': 30}), ('B', 'F', {'marche': 3, 'temps': 30}), 
-                  ('D', 'F', {'metro': 4, 'temps': 4}), ('E', 'F', {'marche': 3, 'temps': 30})])
+G.add_edges_from([('A', 'B', {'metro': 25, 'marche': 300}), ('A', 'C', {'metro': 4, 'marche': 4}), ('A', 'D', {'metro': 3, 'marche': 30}), 
+                  ('C', 'E', {'metro': 3, 'marche': 30}), ('D', 'E', {'metro': 3, 'marche': 30}), ('B', 'F', {'metro': 3, 'marche': 30}), 
+                  ('D', 'F', {'metro': 4, 'marche': 4}), ('E', 'F', {'metro': 3, 'marche': 30})])
 
 # On affiche notre nombre de noeuds et d' arrêtes valuées
 print(G.number_of_nodes())
@@ -36,22 +36,22 @@ print(G.number_of_edges())
 # On crée notre graphe
 nx.draw(G, with_labels=True, font_color='white')
 
-# 2. On trouve les étapes du trajet le plus court de A à F en choississant les valeurs d'arrêtes en temps .
+# 2. On trouve les étapes du trajet le plus court de A à F en choississant les valeurs d'arrêtes en marche .
 
-# NOTE : On constate qu'il ne va pas directement de A à B car le temps de est de 300 alors qu'en prenant le raccourci, 
-# le temps est plus court , mais on passe par plus de noeuds.
+# NOTE : On constate qu'il ne va pas directement de A à B car le marche de est de 300 alors qu'en prenant le raccourci, 
+# le marche est plus court , mais on passe par plus de noeuds.
 
-resultat = nx.shortest_path(G, 'A', 'B', weight='temps')
+resultat = nx.shortest_path(G, 'A', 'B', weight='marche')
 
 print(resultat)
 # Affiche
 # ['A', 'D', 'F', 'B']
 
-# On calcule le temps total passé pour aller de A à B
-length = nx.shortest_path_length(G, 'A', 'B', weight='temps')
+# On calcule le marche total passé pour aller de A à B
+length = nx.shortest_path_length(G, 'A', 'B', weight='marche')
 
 print(length) 
-# Affiche le temps total passé ; 64 au lieu de 300 !!! C'est beaucoup  mieux !
+# Affiche le marche total passé ; 64 au lieu de 300 !!! C'est beaucoup  mieux !
 # 64
 
 # 3. On imprime le graphique, pour mieux constater les différents chemins..
