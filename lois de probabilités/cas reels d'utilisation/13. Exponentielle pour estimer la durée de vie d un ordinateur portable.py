@@ -5,19 +5,19 @@ U.E : RCP 103
 LA LOI EXPONENTIELLE / LOI CONTINUE
 
 
-Soit X une variable aléatoire suivant la loi exponentielle de paramètre Λ (se dit "lambda"), 
+Soit X une variable aléatoire suivant la loi exponentielle de paramètre λ (se dit "lambda"), 
 et a et b deux réels positis ou nuls, alors on a : 
 
-P(X<=a) = 1 - ⅇ ^-Λa
--> Veut dire " La probabilité que la variable aléatoire soies inférieure à a est égale à : 1 - exponentielle ^ -Λ * a.
+P(X<=a) = 1 - ⅇ ^-λa
+-> Veut dire " La probabilité que la variable aléatoire soies inférieure à a est égale à : 1 - exponentielle ^ -λ * a.
 
-P(X>=a) = ⅇ ^-Λa
--> Veut dire " La probabilité que la variable aléatoire soies supérieure ou égale  à : exponentielle ^ -Λ * a.
+P(X>=a) = ⅇ ^-λa
+-> Veut dire " La probabilité que la variable aléatoire soies supérieure ou égale  à : exponentielle ^ -λ * a.
 
-P(a <= X <= b) = ⅇ ^-Λa  - ⅇ ^-Λb
--> Veut dire " La probabilité que la variable aléatoire soies comprise entre a et b est égale  à : exponentielle ^ -Λ * a - exponentielle ^ -Λ * b.
+P(a <= X <= b) = ⅇ ^-λa  - ⅇ ^-λb
+-> Veut dire " La probabilité que la variable aléatoire soies comprise entre a et b est égale  à : exponentielle ^ -λ * a - exponentielle ^ -Λ * b.
 
-E(x) = 1 / Λ
+E(x) = 1 /λ
 -> Veut dire l'espérance de la probabilité de x est de 1 divisé par lambda  
 -> Cela permet de calculer Λ, car souvent, on nous donne une durée de vie moyenne (E(x)).
 
@@ -39,26 +39,27 @@ import math
 
 # La durée de vie d'un ordi portable exprimée en années est une variable aléatoire X suivant la loi exponentielle de paramètre Λ = 0.125
 # La probabilité que la vie de cet ordi  dépasse 5 ans est :
-# p(x > 5) = e^ - 0.125 * 5
+# p(x > 5) = e ^ - 0.125 * 5
 
 pb = math.exp(- 0.125 * 5 )   
 print(pb)
 # 0.5352614285189903
 
-# La durée de vie d'un ordi portable exprimée en années est une variable aléatoire X suivant la loi exponentielle de paramètre Λ = 0.125
+# La durée de vie d'un ordi portable exprimée en années est une variable aléatoire X suivant la loi exponentielle 
+# de paramètre λ = 0.125
 # La probabilité que la vie de cet ordi soit inférieure à 3 ans est :
-# p(x < 3) = 1 - e ^ 0.125 * 5
+# p(x <= 3) = 1 - e ^ 0.125 * 3
 
 pb = 1 - math.exp(- 0.125 * 3 )   
 print(pb)
 # 0.31271072120902776
 
-# La durée de vie d'un ordi exprimée en années est une variable aléatoire X suivant la loi exponentielle de paramètre ^ = 0.125
+# La durée de vie d'un ordi exprimée en années est une variable aléatoire X suivant la loi exponentielle de paramètre λ = 0.125
 
 """ Quelle est la pb que la durée de vie de cet ordinateur portable dépasse 5 ans sachant qu'il fonctionne déjà depuis 2 ans ? """
 
 # -> On ne s'occupe pas des 2 ans, car pas de mémoire
-# P x<=2(X>=5) = P(X>=3) = e^-0.125*3 = 0.687
+# P x<=2(X>=5) = P(X>=3) = e ^ -0.125*3 = 0.687
 
 pb = math.exp(- 0.125 * 3 )   
 print(pb)
