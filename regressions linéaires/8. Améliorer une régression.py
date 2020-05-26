@@ -1,3 +1,9 @@
+""" Source :
+
+'Apprendre le Machine Learning' de Guillaume Saint-Cirgue.
+
+https://machinelearnia.com/a-propos/ 
+"""
 
 import numpy as np   
 import matplotlib.pyplot as plt   
@@ -30,4 +36,4 @@ plt.show()
 # 𝑅2 = 94%
 
 
-# Pour rappel: la méthode la plus simple pour réaliser une régression est décrite dans le numéro 3
+# Pour rappel: la méthode la plus simple pour réaliser une régression est décrite dans le numéro 1
