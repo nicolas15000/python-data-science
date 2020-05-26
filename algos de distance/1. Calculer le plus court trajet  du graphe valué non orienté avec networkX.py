@@ -24,7 +24,7 @@ G = nx.Graph()
 # On ajoute des noeuds
 G.add_nodes_from(['A', 'B', 'C', 'D', 'E', 'F'])
 
-# On ajoute une liste d' arrêtes valuées
+# On ajoute une liste d' arrêtes valuées, une par le temps de marche, et une par le temps de métro.
 G.add_edges_from([('A', 'B', {'metro': 25, 'marche': 300}), ('A', 'C', {'metro': 4, 'marche': 4}), ('A', 'D', {'metro': 3, 'marche': 30}), 
                   ('C', 'E', {'metro': 3, 'marche': 30}), ('D', 'E', {'metro': 3, 'marche': 30}), ('B', 'F', {'metro': 3, 'marche': 30}), 
                   ('D', 'F', {'metro': 4, 'marche': 4}), ('E', 'F', {'metro': 3, 'marche': 30})])
@@ -36,10 +36,11 @@ print(G.number_of_edges())
 # On crée notre graphe
 nx.draw(G, with_labels=True, font_color='white')
 
-# 2. On trouve les étapes du trajet le plus court de A à F en choississant les valeurs d'arrêtes en marche .
+# 2. On trouve les étapes du trajet le plus court de A à B en choississant les valeurs d'arrêtes de temps de marche .
 
-# NOTE : On constate qu'il ne va pas directement de A à B car le marche de est de 300 alors qu'en prenant le raccourci, 
-# le marche est plus court , mais on passe par plus de noeuds.
+# NOTE : On constate qu'il ne va pas directement de A à B car le temps de marche est de 300 entre A et B , 
+# alors qu'en prenant le raccourci, 
+# le temps de marche est plus court , mais on passe par plus de noeuds.
 
 resultat = nx.shortest_path(G, 'A', 'B', weight='marche')
 
@@ -47,11 +48,11 @@ print(resultat)
 # Affiche
 # ['A', 'D', 'F', 'B']
 
-# On calcule le marche total passé pour aller de A à B
+# On calcule le temsp de marche total passé pour aller de A à B
 length = nx.shortest_path_length(G, 'A', 'B', weight='marche')
 
 print(length) 
-# Affiche le marche total passé ; 64 au lieu de 300 !!! C'est beaucoup  mieux !
+# Affiche le temps de marche total passé ; 64 au lieu de 300 !!! C'est beaucoup  mieux !
 # 64
 
 # 3. On imprime le graphique, pour mieux constater les différents chemins..
