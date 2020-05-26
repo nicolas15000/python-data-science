@@ -39,3 +39,4 @@ print(LAMBDA)
 
 probabilite =  math.exp( -0.1505 * 15 ) - math.exp( -0.1505 * 20 )
 print(probabilite)
+# 0.05532000857337062
