@@ -6,6 +6,11 @@ My wish is to call theses scripts from my node vue starter, later, with a Flask 
 
 Thanks to this nice book : 
 https://www.amazon.fr/Python-Data-Science-Dummies-Mueller/dp/1119547628
+<br>
+And <br>
+Python Data Science Handbook<br>
+https://jakevdp.github.io/PythonDataScienceHandbook/
+
 
 <br>
 Files with the C letter at the start of their names have confirmed status. <br>
@@ -40,6 +45,9 @@ qui récapitule bien les principaux problèmes rencontrés avec le solveur. Je v
 Egalement le livre : <br>
 https://www.springer.com/gp/book/9782287302787<br>
 Conseillé pour l'UE STA001 du Cnam.<br><br>
+
+Le site d'une personne de l'ENSAE:<br>
+http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx/td_2a.html#machine-learning-les-briques-de-bases<br>
 
 <b>Les Chaines Youtube Françaises:</b><br>
 Machine Learnia https://www.youtube.com/channel/UCmpptkXu8iIFe6kfDK5o7VQ<br>
