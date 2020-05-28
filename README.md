@@ -46,7 +46,7 @@ Egalement le livre : <br>
 https://www.springer.com/gp/book/9782287302787<br>
 Conseillé pour l'UE STA001 du Cnam.<br><br>
 
-Le site d'une personne de l'ENSAE:<br>
+Le site d'un professeur de l'ENSAE:<br>
 http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx/td_2a.html#machine-learning-les-briques-de-bases<br>
 
 <b>Les Chaines Youtube Françaises:</b><br>
@@ -70,3 +70,8 @@ https://github.com/Columbia-Intro-Data-Science/APMAE4990-/tree/master/notebooks<
 
 Un autre dépot sympa :<br>
 https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers<br>
+
+
+<b>Ecoles</b><br>
+1. S'inscrire à l'EICNAM : http://ecole-ingenieur.cnam.fr/hors-temps-de-travail/inscription-a-l-eicnam/
+2. S'inscrire à l'ENSAE : https://www.ensae.fr/auditeurs-libres/
