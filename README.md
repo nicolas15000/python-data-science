@@ -44,9 +44,9 @@ qui récapitule bien les principaux problèmes rencontrés avec le solveur. Je v
 
 Egalement le livre : <br>
 https://www.springer.com/gp/book/9782287302787<br>
-Conseillé pour l'UE STA001 du Cnam.<br><br>
+Conseillé pour l'UE STA001 du Cnam.<br>
 
-Le site d'un professeur de l'ENSAE:<br>
+Le site de Xavier Dupre, professeur de l'ENSAE:<br>
 http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx/td_2a.html#machine-learning-les-briques-de-bases<br>
 
 <b>Les Chaines Youtube Françaises:</b><br>
