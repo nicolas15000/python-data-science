@@ -1,5 +1,5 @@
 # PYTHON DATA SCIENCE SCRIPTS EN FRANCAIS
-<b>CAS D'UTILISATIONS UTILES DANS LA VIE REELLE .</b>
+<center><b>CAS D'UTILISATIONS UTILES DANS LA VIE REELLE .</b></center><br>
 ![Screenshot](icon.jpg)<br>
 <b>English</b><br>
 Some ordered python regressions and linear solvers studies scripts, some are mine, others are from various authors and translated into french <br><br>
