@@ -1,5 +1,5 @@
 # PYTHON DATA SCIENCE SCRIPTS EN FRANCAIS
-<center><b>CAS D'UTILISATIONS UTILES DANS LA VIE REELLE .</b></center>
+<b>CAS D'UTILISATIONS UTILES DANS LA VIE REELLE .</b>
 <br>
 ![Screenshot](icon.jpg)<br>
 <b>English</b><br>
