@@ -77,4 +77,4 @@ https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Metho
 <b>Ecoles</b><br>
 1. S'inscrire à l'EICNAM : http://ecole-ingenieur.cnam.fr/hors-temps-de-travail/inscription-a-l-eicnam/
 2. S'inscrire à l'ENSAE : https://www.ensae.fr/auditeurs-libres/
-3. S'inscrire à L'université de Bordeaux : http://www.math.u-bordeaux.fr/~mchave100p/teaching/
+3. S'inscrire à L'université de Bordeaux : http://www.math.u-bordeaux.fr/~mchave100p/teaching/ https://www.math.u-bordeaux.fr/imb/spip.php
