@@ -64,7 +64,7 @@ plt.show()
 
 
 # B Découpage en classes – Matérialisation des groupes 
-# **************NOTE NICO fcluster NE FONCTIONNE PAS, LES GROUPES SONT FAUX***************** 
+# **************NOTE NICO fcluster LES GROUPES NE CORRESPONDENT PAS A CEUX VUS SUR LE PDF***************** 
 
 #matérialisation des 4 classes (hauteur t = 7) 
 plt.title('CAH avec matérialisation des 4 classes') 
