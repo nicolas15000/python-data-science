@@ -78,7 +78,7 @@ var voitures= [
 ]
 
 // 1. La première fonction "mappe" un attribut du document dans un groupe ( le groupe est l'id de l'ingénieur  dans ce cas )
-//  et place en valeur le titre
+//  et place en valeur le nom
 var mapIngenieur  = function() {
     emit(this.ingenieur._id, this.nom);
 };
