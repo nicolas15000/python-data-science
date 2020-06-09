@@ -81,7 +81,7 @@ https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Metho
 3. S'inscrire à L'université de Bordeaux : http://www.math.u-bordeaux.fr/~mchave100p/teaching/ https://www.math.u-bordeaux.fr/imb/spip.php<br><br>
 
 Moocs :<br>
-Coursera <br>
+<b>Coursera </b><br>
 Programmer en Python pour la Data Science de A à Z :https://www.udemy.com/course/data-science-avec-python/<br>
 Spécialisation Science des données appliquée avec Python : https://fr.coursera.org/specializations/data-science-python<br>
 Modélisation financière : https://www.coursera.org/specializations/finance-quantitative-modeling-analysts#courses<br>
