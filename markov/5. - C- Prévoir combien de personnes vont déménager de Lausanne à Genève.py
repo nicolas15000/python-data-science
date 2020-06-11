@@ -1,7 +1,8 @@
 """ 
-Chaines de markov à 2 états  :
+ markov discrète à 2 états  :
 
 On veut avoir des prévisions des déménagements, en fonction du nombre d'états dans le temps .
+
 
 Source : 
 Youtube PROMATH
@@ -22,7 +23,7 @@ def matrixMul(a, n):
     else:
         return np.matmul(matrixMul(a, n-1), a)
 
-# 2. On crée la matrice de transition, celle ci comprends la probabilité de passer d'un état à un autre.
+# 2. On crée la ** matrice de transition ** de notre graphe markov discret, celle ci comprends la probabilité de passer d'un état à un autre.
 """ 
 La probabilité  de rester à Lausanne est de  : 0.8 
 La probabilité  de déménagement  de Lausanne à Genève est de  : 0.2 
@@ -39,9 +40,8 @@ transition_matrix_power = matrixMul(transition_matrix,nombre_etats)
 
 print(transition_matrix_power )
 
-# 5. On crée le vecteur initial de probabilités de l'état initial
+# 5. On crée le ** vecteur de probabilités de l'état initial **
 # 20% de la popuplation est sur Lausanne et 80% sur Genève, on peut aussi le mettre n personnes
-
 probabilite_0 = np.array([2000,8000]) 
 
 # 4. On calcule les probabilités de l'état du système en fonction du nombre de temps.
