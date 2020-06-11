@@ -21,7 +21,7 @@ Files with the KO letters at the beginning of their names have a result to check
 
 <b>Français/French</b><br>
 Je stocke ici des scripts de data science et de mathématiques descriptives ou prédictives en Python.<br>
-L'objectif de ce repos est de constituer au fil des années une "boite à outil" fiable et pratique, en data science Python, afin de traiter un bon nombre de problèmes.
+L'objectif de ce repos est de constituer au fil des années une "boite à outil" fiable et pratique de trames, en data science Python, afin de traiter un bon nombre de problèmes.
 <br><br>
 <b>Les scripts possédant la lettre C au début de leur noms ont un statut confirmé.</b><br>
 <b>Les scripts possédant l'attribut BASE au début de leurs noms sont les plus simples et fiables.</b><br>
