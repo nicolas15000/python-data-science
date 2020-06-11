@@ -62,6 +62,8 @@ Saïd Chermak : https://www.youtube.com/channel/UCppNXkk1sgDguxe8fQK9tng<br>
 Science4All : https://www.youtube.com/watch?v=Jf40Xd52NyQ
 
 <br>
+<b>Vous désirez collaborer avec moi (Surtout sur les solveurs linéaires ) ... Ok ! envoyez un message</b><br>
+
 
 <b>Liens et références (Suite)</b><br>
 A regarder également le super dépot Columbia-Intro-Data-Science avec tout le travail d'étudiants de Columbia dans ce domaine avec Python.<br>
