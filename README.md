@@ -77,7 +77,7 @@ Un autre dépot sympa :<br>
 https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers<br>
 
 
-<b>Ecoles</b><br>
+<b>Ecoles : </b><br>
 1. S'inscrire à l'EICNAM : http://ecole-ingenieur.cnam.fr/hors-temps-de-travail/inscription-a-l-eicnam/
 2. S'inscrire à l'ENSAE : https://www.ensae.fr/auditeurs-libres/
 3. S'inscrire à L'université de Bordeaux : http://www.math.u-bordeaux.fr/~mchave100p/teaching/ https://www.math.u-bordeaux.fr/imb/spip.php<br><br>
@@ -92,5 +92,5 @@ Tous les cours de programmation linéaire : <br>
 https://www.udemy.com/courses/search/?q=%22LINEAR%20PROGRAMMING%22&src=sac&kw=linear%20programmaing
 
 
-<b> Collabs </b>
-Vous désirez collaborer avec moi (Surtout sur les solveurs linéaires ) ... Ok ! envoyez un message<br>
+<b> Collabs : </b><br>
+Vous désirez collaborer avec moi (Surtout sur les solveurs linéaires (Finance, Monde agricole, productions alimentaires)) ... Ok ! envoyez moi un message<br>
