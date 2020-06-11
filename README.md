@@ -62,7 +62,7 @@ Saïd Chermak : https://www.youtube.com/channel/UCppNXkk1sgDguxe8fQK9tng<br>
 Science4All : https://www.youtube.com/watch?v=Jf40Xd52NyQ
 
 <br>
-<b>Vous désirez collaborer avec moi (Surtout sur les solveurs linéaires ) ... Ok ! envoyez un message</b><br>
+
 
 
 <b>Liens et références (Suite)</b><br>
@@ -90,3 +90,7 @@ Modélisation financière : https://www.coursera.org/specializations/finance-qua
 
 Tous les cours de programmation linéaire : <br>
 https://www.udemy.com/courses/search/?q=%22LINEAR%20PROGRAMMING%22&src=sac&kw=linear%20programmaing
+
+
+<b> Collabs </b>
+Vous désirez collaborer avec moi (Surtout sur les solveurs linéaires ) ... Ok ! envoyez un message<br>
