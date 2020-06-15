@@ -89,7 +89,10 @@ Spécialisation Science des données appliquée avec Python : https://fr.courser
 Modélisation financière : https://www.coursera.org/specializations/finance-quantitative-modeling-analysts#courses<br><br>
 
 Tous les cours de programmation linéaire : <br>
-https://www.udemy.com/courses/search/?q=%22LINEAR%20PROGRAMMING%22&src=sac&kw=linear%20programmaing
+https://www.udemy.com/courses/search/?q=%22LINEAR%20PROGRAMMING%22&src=sac&kw=linear%20programmaing<br><br>
+
+Moocs de Maths:<br>
+https://www.fun-mooc.fr/courses/course-v1:MinesTelecom+04008+session06/about<br><br>
 
 
 <b> Collabs : </b><br>
