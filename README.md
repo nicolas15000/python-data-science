@@ -94,6 +94,9 @@ https://www.udemy.com/courses/search/?q=%22LINEAR%20PROGRAMMING%22&src=sac&kw=li
 Moocs de Maths:<br>
 https://www.fun-mooc.fr/courses/course-v1:MinesTelecom+04008+session06/about<br><br>
 
+Moocs de sciences Physique : <br>
+https://www.my-mooc.com/fr/categorie/physique<br><br>
+
 
 <b> Collabs : </b><br>
 Vous désirez collaborer avec moi (Surtout sur les solveurs linéaires (Finance, Monde agricole, productions alimentaires)) ... Ok ! envoyez moi un message<br>
