@@ -22,11 +22,13 @@ Eicnam Nfe 204
 
 http://b3d.bdpedia.fr/
 
+https://scikit-learn.org/stable/modules/feature_extraction.html
+
 https://towardsdatascience.com/natural-language-processing-feature-engineering-using-tf-idf-e8b9d00e7e76
 
 https://medium.com/@imamun/creating-a-tf-idf-in-python-e43f05e4d424
 
-https://scikit-learn.org/stable/modules/feature_extraction.html
+
 
  """
 
