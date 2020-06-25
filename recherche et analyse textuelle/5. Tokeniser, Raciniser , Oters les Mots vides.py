@@ -33,8 +33,8 @@ https://www.stat4decision.com/fr/traitement-langage-naturel-francais-tal-nlp/
 # 1. On importe les librairies .
 
 # Cette lib sert pour le stemming :
-import spacy
-from nltk.stem.snowball import SnowballStemmer
+# import spacy
+# from nltk.stem.snowball import SnowballStemmer
 
 
 
