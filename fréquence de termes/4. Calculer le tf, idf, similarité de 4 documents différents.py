@@ -6,7 +6,7 @@ On a 3 documents
 
 On veut calculer
 
-1. La fréquence des termes tf(t,d)=nt,d
+1. La fréquence des termes dans chaque document tf(t,d)=nt,d avec t = terme et d = document et créer la matrice d'incidence .
 
 2. L'idf
 
@@ -51,21 +51,25 @@ docD = open("datasets/D.txt", "r", encoding="utf-8-sig")
 # 3. on sépare les mots dans chaque fichier en se basant sur le caractère d'espacement, et on en crée une liste. 
 docA = docA.read()
 docA = docA.split(" ")
+# On passe chaque mot en minuscule
 docA = list(map(lambda x:x.lower(),docA))
 print(docA)
 
 docB = docB.read()
 docB = docB.split(" ")
+# On passe chaque mot en minuscule
 docB = list(map(lambda x:x.lower(),docB))
 print(docB)
 
 docC = docC.read()
 docC = docC.split(" ")
+# On passe chaque mot en minuscule
 docC =list(map(lambda x:x.lower(),docC))
 print(docC)
 
 docD = docD.read()
 docD = docD.split(" ")
+# On passe chaque mot en minuscule
 docD = list(map(lambda x:x.lower(),docD ))
 print(docD)
 
@@ -74,7 +78,8 @@ print(docD)
 
 
 """ --------------------------------------------------------------------------------------------------
-1. La fréquence des termes tf(t,d)=nt,d
+1. La fréquence des termes pour chaque document : tf(t,d)=nt,d avec t = terme et d = document .
+1.1 Avec des boucles
 -------------------------------------------------------------------------------------------------- """
 
 """ 4. 
@@ -119,7 +124,17 @@ résultat :
 
  """
 
+""" --------------------------------------------------------------------------------------------------
+1. La fréquence des termes pour chaque document : tf(t,d)=nt,d avec t = terme et d = document .
+1.2 Avec skLearn
+-------------------------------------------------------------------------------------------------- """
+
+
+
+
+
+
 
 """ --------------------------------------------------------------------------------------------------
- L'IDF'
+ L'IDF
 -------------------------------------------------------------------------------------------------- """
