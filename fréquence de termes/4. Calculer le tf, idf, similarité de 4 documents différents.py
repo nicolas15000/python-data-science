@@ -96,6 +96,7 @@ with open('datasets/D.txt', 'r', encoding="utf-8") as file:
 
 corpus = [docA,docB,docC,docD]
 print(corpus)
+
 X = vectorizer.fit_transform(corpus)
 
 # Créer la matrice d'incidence , on voit qu dans le doc 4 il y a 2 fois le mot 'dans' dans le 4ème doc
