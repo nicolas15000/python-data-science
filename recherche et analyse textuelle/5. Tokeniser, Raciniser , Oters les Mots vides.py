@@ -32,10 +32,11 @@ https://www.stat4decision.com/fr/traitement-langage-naturel-francais-tal-nlp/
 
 # 1. On importe les librairies .
 
-# Cette lib sert pour le stemming :
-# import spacy
-# from nltk.stem.snowball import SnowballStemmer
-
+# Cette lib sert pour le stemming, elle ne fonctionne pas en python 32 bits !! :
+import spacy
+nlp = spacy.load("fr_core_news_sm")
+from nltk.stem.snowball import SnowballStemmer
+stemmer = SnowballStemmer(language='french')
 
 
 """ --------------------------------------------------------------------------------------------------
@@ -86,25 +87,25 @@ for mot in liste_noire:
 
 
 """ --------------------------------------------------------------------------------------------------
-3. Raciniser (Confondre toutes les formes d'un même mot en un seul), utiliser https://www.stat4decision.com/fr/traitement-langage-naturel-francais-tal-nlp/
-  Stemming
+3. Raciniser (Confondre toutes les formes d'un même mot en un seul), 
+   utiliser https://www.stat4decision.com/fr/traitement-langage-naturel-francais-tal-nlp/
+   Stemming
 -------------------------------------------------------------------------------------------------- """
 
 # Spacy ne fonctionne pas avec python 3.8 32 bits, il faut le 64
-""" 
-stemmer = SnowballStemmer(language='french')
 
 def return_stem(sentence):
     doc = nlp(sentence)
     return [stemmer.stem(X.text) for X in doc]
-return_stem(docA) """
 
-""" 
+return_stem(docA) 
 
 
---------------------------------------------------------------------------------------------------
+
+
+"""  --------------------------------------------------------------------------------------------------
 4. Scinder le document en mots uniques - Tokeniser ( Il faudrait plutôt le faire avec nltk), c'est la façon 'naïve'
--------------------------------------------------------------------------------------------------- """
+--------------------------------------------------------------------------------------------------  """
 docA = docA.split() 
 print(docA)
 
