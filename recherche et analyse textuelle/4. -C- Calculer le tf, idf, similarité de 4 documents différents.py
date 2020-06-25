@@ -2,7 +2,7 @@
 Introduction 
 
 
-On a 3 documents 
+On a 4 documents 
 
 On veut calculer
 
@@ -51,7 +51,7 @@ import math
 
 from sklearn.feature_extraction.text import CountVectorizer
 
-# Premier exemple avec un tableau contnant des docs
+# D'abord, un Premier exemple avec un tableau contnant des docs ( C'est l'exemple du site sk learn))
 vectorizer = CountVectorizer()
 corpus = [
     'This is the first document.',
@@ -92,7 +92,8 @@ print(tfidf.toarray())
 """
 
 
-# Deuxième exemple avec les documents .txt pour source 
+# Deuxième exemple , en prenant 4 documents .txt pour source et en les important
+# Voici leur contenu :
 
 """  
     A: Le loup est dans la bergerie.
