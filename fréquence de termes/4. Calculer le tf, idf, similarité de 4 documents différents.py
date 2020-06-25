@@ -48,53 +48,74 @@ docD = open("datasets/D.txt", "r", encoding="utf-8-sig")
 
 
 
-# 3. on splitte les mots dans chaque fichier en se basant sur l'espace. 
+# 3. on sépare les mots dans chaque fichier en se basant sur le caractère d'espacement, et on en crée une liste. 
 docA = docA.read()
 docA = docA.split(" ")
+docA = list(map(lambda x:x.lower(),docA))
 print(docA)
 
 docB = docB.read()
 docB = docB.split(" ")
+docB = list(map(lambda x:x.lower(),docB))
 print(docB)
 
 docC = docC.read()
 docC = docC.split(" ")
+docC =list(map(lambda x:x.lower(),docC))
 print(docC)
+
 docD = docD.read()
 docD = docD.split(" ")
+docD = list(map(lambda x:x.lower(),docD ))
 print(docD)
+
+
+
+
 
 """ --------------------------------------------------------------------------------------------------
 1. La fréquence des termes tf(t,d)=nt,d
 -------------------------------------------------------------------------------------------------- """
 
 """ 4. 
-ON se crée une liste de tous les mots compris dans les 4 documents 
+ON se crée une liste "total" de tous les mots compris dans les 4 documents 
 -> On joint les 4 documents ensemble et on enleve les mots dupliqués
  """
-total= set(docA).union(set(docB))
-print("Voici tous les mots trouvés dans les 4 documents, sans doublons : ", total)
+total= set(docA).union(set(docB)).union(set(docC)).union(set(docD))
+print("Voici tous les mots trouvés dans les 4 documents, sans doublons : ")
+print(total)
+
 
 wordDictA = dict.fromkeys(total, 0) 
 wordDictB = dict.fromkeys(total, 0)
+wordDictC = dict.fromkeys(total, 0)
+wordDictD = dict.fromkeys(total, 0)
 
-# 5. On vérifie si les mots de la liste 'total' sont présents dans la liste document ou pas .
+# 5. On vérifie si les mots de la liste 'total' sont présents dans chaque document ou pas, si oui, on incrémente son compteur ++ .
 for word in docA:
     wordDictA[word]+=1
     
 for word in docB:
     wordDictB[word]+=1
 
-# 6. On place le résultat dans un data frame pour voir le résultat.
-pd.DataFrame([wordDictA, wordDictB])
+for word in docC:
+    wordDictC[word]+=1
 
-print(pd.DataFrame([wordDictA, wordDictB]))
+for word in docD:
+    wordDictD[word]+=1
+
+# 6. On place le résultat dans un data frame pour voir le résultat.
+resultat = pd.DataFrame([wordDictA, wordDictB,wordDictC,wordDictD])
+
+print(resultat)
 
 """    
 résultat : 
-    moutons  dans  est  Le  sont  bergerie.  loup  la  Les
-        0     1    1   1     0          1     1   1    0
-        1     1    0   0     1          1     0   1    1
+   moutons  a  dans  loup  sont  il  bergerie.  mangé  trois  pré,  gueule  loups  un  est  mouton,  autres  la  restés  et  y  les  du  le  loup.  mouton
+0        0  0     1     1     0   0          1      0      0     0       0      0   0    1        0       0   1       0   0  0    0   0   1      0       0
+1        1  0     1     0     1   0          1      0      0     0       0      0   0    0        0       0   1       0   0  0    1   0   0      0       0
+2        0  1     1     1     1   0          1      1      0     0       0      1   2    0        1       1   1       1   0  0    1   0   0      0       0
+3        1  1     2     0     0   1          0      0      1     1       1      0   1    0        0       0   1       0   1  1    0   1   1      1       1
 
  """
 
