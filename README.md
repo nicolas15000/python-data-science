@@ -26,6 +26,8 @@ L'objectif de ce repos est de constituer au fil des années une "boite à outil"
 <b>Les scripts possédant la lettre C au début de leur noms ont un statut confirmé.</b><br>
 <b>Les scripts possédant l'attribut BASE au début de leurs noms sont les plus simples et fiables.</b><br>
 <b>Les scripts possédant la lettre KO au début de leurs noms ont un statut à vérifier ou en défaut.</b>
+<br>
+(Note : Confirmé, veut dire résultat bon, confirmé par comparaison, cependant, la méthode pour obtenir le resultat n'est pas forcément encore la meilleure.</br>
 <br><br>
 
 Je vais en ajouter un paquet au fil du temps, en particulier, de l'import CSV avec de l'utilisation de solveurs linéaires .<br>
