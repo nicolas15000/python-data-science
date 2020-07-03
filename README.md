@@ -103,4 +103,4 @@ https://www.my-mooc.com/fr/categorie/physique<br><br>
 
 
 <b> Collabs : </b><br>
-Vous désirez collaborer avec moi (Surtout sur les solveurs linéaires (Finance, Monde agricole, productions alimentaires)) ... Ok ! envoyez moi un message<br>
+Vous désirez collaborer avec moi (Surtout sur les solveurs linéaires ( Monde agricole, productions alimentaires, production et j'espère... finance)) ... Ok ! envoyez moi un message<br>
