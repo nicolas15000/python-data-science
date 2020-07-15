@@ -87,7 +87,7 @@ https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Metho
 <b>Moocs :</b><br>
 Coursera <br>
 Programmer en Python pour la Data Science de A à Z :https://www.udemy.com/course/data-science-avec-python/<br>
-Les Data Sciences de A à Z  : https://www.udemy.com/course/les-data-sciences-de-a-a-z/
+Les Data Sciences de A à Z  : https://www.udemy.com/course/les-data-sciences-de-a-a-z/<br>
 Spécialisation Science des données appliquée avec Python : https://fr.coursera.org/specializations/data-science-python<br>
 Modélisation financière : https://www.coursera.org/specializations/finance-quantitative-modeling-analysts#courses<br><br>
 real-data-science-problems : https://www.udemy.com/course/real-data-science-problems-with-python/<br>
