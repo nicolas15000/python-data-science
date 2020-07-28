@@ -4,8 +4,10 @@
 On a 2 documents, on cherche à calculer la similarité cosinus, avec Python , par curiosité.
 
 mon interprétation : 
-La similarité cosinus calcule combien les angles des vcteurs de documents sont proches sans tenir compte de la longueur de svecteurs .
+La similarité cosinus calcule combien les angles des vecteurs de documents sont proches sans tenir compte de la longueur des vecteurs .
 Pour effectuer le calcul, on a toujours un vecteur requête.
+La similarité cosinus  nous donne un résultat 0>x>1, plus il est élevé, plus les deux documents sont similaires.
+Le premier document est généralement le vecteur requête à qui l'on compre des dizaines d'autres documents.
 
 
 ** Sources 
