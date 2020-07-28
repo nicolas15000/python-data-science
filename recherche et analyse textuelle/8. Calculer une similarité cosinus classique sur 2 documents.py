@@ -5,7 +5,7 @@ On a 2 documents textes classiques, on cherche à calculer la similarité cosinu
 
 mon interprétation : 
 La similarité cosinus  nous donne un résultat 0>x>1, plus il est élevé, plus les deux documents sont similaires.
-Le premier document est généralement le vecteur requête à qui l'on compre des dizaines d'autres documents.
+Le premier document est généralement le vecteur requête auquel on compare des dizaines d'autres documents.
 
 
 ** Sources 
