@@ -7,9 +7,6 @@ Map reduce permet de réaliser une collection big data personnalisée, à parti 
 Exercice : 
 Faire un map reduce pour retrouver quel voitures un ingénieur a créé .
 
-Source : 
-Nfe 204 Eicnam.
-Philippe Rigaux 
 
  */
 
