@@ -10,12 +10,6 @@ Le premier document est généralement le vecteur requête auquel on compare des
 
 ** Sources 
 
-Eicnam U.E Nfe 204 - Philippe Rigaux
-
-Chapitre ' Recherche avec classement '
-
-http://b3d.bdpedia.fr/
-
 https://towardsdatascience.com/overview-of-text-similarity-metrics-3397c4601f50
 
 https://machinelearningmastery.com/develop-word-embeddings-python-gensim/
