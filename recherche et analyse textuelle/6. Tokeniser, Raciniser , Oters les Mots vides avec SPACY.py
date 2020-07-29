@@ -24,10 +24,6 @@ En anglais cela se dit :
 
 ** Sources 
 
-Eicnam Nfe 204
-
-http://b3d.bdpedia.fr/
-
 https://spacy.io/
 
 https://www.stat4decision.com/fr/traitement-langage-naturel-francais-tal-nlp/

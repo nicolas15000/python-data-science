@@ -20,9 +20,6 @@ En anglais cela se dit :
 
 ** Sources 
 
-Eicnam Nfe 204
-
-http://b3d.bdpedia.fr/
 
 http://docs.cltk.org/en/latest/french.html
 

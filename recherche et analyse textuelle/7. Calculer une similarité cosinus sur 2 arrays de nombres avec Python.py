@@ -12,11 +12,6 @@ Le premier document est généralement le vecteur requête à qui l'on compre de
 
 ** Sources 
 
-Eicnam U.E Nfe 204
-
-Chapitre ' Recherche avec classement '
-
-http://b3d.bdpedia.fr/
 
 https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html
 

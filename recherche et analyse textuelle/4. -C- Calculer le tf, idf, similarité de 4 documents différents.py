@@ -18,10 +18,6 @@ La fréquence d’un terme t dans un document d est le nombre d’occurrences de
 
 Sources 
 
-Eicnam Nfe 204
-
-http://b3d.bdpedia.fr/
-
 https://scikit-learn.org/stable/modules/feature_extraction.html
 
 https://towardsdatascience.com/natural-language-processing-feature-engineering-using-tf-idf-e8b9d00e7e76
