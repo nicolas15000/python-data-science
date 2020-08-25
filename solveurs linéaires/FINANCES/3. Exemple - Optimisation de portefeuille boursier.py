@@ -155,3 +155,9 @@ for v in prob.variables():
         if v.varValue>0:
             print(v.name, "=", v.varValue)
 
+""" Le portefeuille de qualité optimum sous contrainte de risques est
+--------------------------------------------------------------------------------------------------------------
+Potential_Investment_Arkansas_REIT = 22666.667
+Potential_Investment_Bedrock_Insurance_Annuity = 47333.333
+Potential_Investment_Certificate_of_deposit = 12666.667
+Potential_Investment_Saving_Account = 17333.333 """
