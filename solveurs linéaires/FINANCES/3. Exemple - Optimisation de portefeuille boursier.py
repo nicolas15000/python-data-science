@@ -64,14 +64,22 @@ Joli look. Cependant, quelques modifications de mise en forme doivent être appo
  """
 
 
+#1's and 0's
 df['Liquidity'] = (df['Liquidity']=='Immediate')
-df['Liquidity'] = df['Liquidity'].astype(int)#1b
+df['Liquidity'] = df['Liquidity'].astype(int)
+
+#1's and 0's
 df['Rating'] = (df['Rating']=='A')
-df['Rating']= df['Rating'].astype(int)#2
+df['Rating']= df['Rating'].astype(int)
+
+#1's and 0's
 savecd = [1,1,0,0,0,0,0,0]
-df['Saving&CD'] = savecd#3
+df['Saving&CD'] = savecd
+
+#1's and 0's
 amt_invested = [1]*8
 df['Amt_Invested'] = amt_invested
+df
 print(df)
 
 """   Designation       Potential Investment  Expected Return  Rating  Risk  Liquidity  Saving&CD  Amt_Invested
@@ -83,4 +91,67 @@ print(df)
 5          X6          Nocal Mining Bond            0.065       0    15          0          0             1
 6          X7           Minocompo System            0.200       1    65          1          0             1
 7          X8              Antony Hotels            0.125       0    40          1          0             1 """
+
+prob = LpProblem("Portfolio_Opt",LpMinimize)
+
+# Create a list of the inventment items
+inv_items = list(df['Potential Investment'])
+
+# Create a dictinary of risks for all inv items
+risks = dict(zip(inv_items,df['Risk']))
+
+# Create a dictionary of returns for all inv items
+returns = dict(zip(inv_items,df['Expected Return']))
+
+#Create dictionary for ratings of inv items
+ratings = dict(zip(inv_items,df['Rating']))
+
+# Create a dictionary for liquidity for all inv items
+liquidity = dict(zip(inv_items,df['Liquidity']))
+
+#Create a dictionary for savecd for inve items
+savecd = dict(zip(inv_items,df['Saving&CD']))
+
+#Create a dictionary for amt as being all 1's
+amt = dict(zip(inv_items,df['Amt_Invested']))
+
+
+
+print(risks)
+
+""" Ensuite, nous définissons nos variables de décision comme des investissements et y ajoutons quelques paramètres,
+
+    Nom: pour étiqueter nos variables de décision
+    Lowbound = 0: pour s'assurer qu'il n'y a pas d'argent négatif dans notre solution
+    Continu: parce que nous avons affaire à des cents pour un dollar. 
+"""
+inv_vars = LpVariable.dicts("Potential Investment",inv_items,lowBound=0,cat='Continuous')
+
+""" Enfin, nous ajoutons la variable de décision modifiée à notre variable 
+de problème que nous avons créée précédemment et nous entrons en outre
+ les contraintes. Nous parcourons les dictionnaires en utilisant 
+ des «boucles for» pour chaque élément d'investissement. """
+
+# Fonction objectif à minimiser : ON veut minimiser les risques
+prob += lpSum([risks[i]*inv_vars[i] for i in inv_items])
+
+# amt
+prob += lpSum([amt[f] * inv_vars[f] for f in inv_items]) == 100000, "Investments"
+prob += lpSum([returns[f] * inv_vars[f] for f in inv_items]) >= 7500, "Returns"
+prob += lpSum([ratings[f] * inv_vars[f] for f in inv_items]) >= 50000, "Ratings"
+prob += lpSum([liquidity[f] * inv_vars[f] for f in inv_items]) >= 40000, "Liquidity"
+prob += lpSum([savecd[f] * inv_vars[f] for f in inv_items]) <= 30000, "Save and CD"
+print(prob)
+
+
+prob.writeLP("Portfolio_Opt.lp")
+
+
+prob.solve()
+
+
+print("Le portefeuille de qualité optimum est \n"+"-"*110)
+for v in prob.variables():
+        if v.varValue>0:
+            print(v.name, "=", v.varValue)
 
