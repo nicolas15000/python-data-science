@@ -121,5 +121,23 @@ model.solve()
 for v in model.variables():
     print(v.name, "=", v.varValue)
 
+"""     Result - Optimal solution found
+
+Objective value:                66500.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.04
+Time (Wallclock seconds):       0.04
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.06   (Wallclock seconds):       0.06
+
+orders_X = 0.0
+orders_Y = 1.0
+orders_Z = 1.0
+quantity_X = 0.0
+quantity_Y = 90.0
+quantity_Z = 60.0 """
+
 
 
