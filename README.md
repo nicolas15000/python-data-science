@@ -88,7 +88,7 @@ https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Metho
 3. S'inscrire à l'EICNAM : http://ecole-ingenieur.cnam.fr/hors-temps-de-travail/inscription-a-l-eicnam/
 4. S'inscrire à l'ENSAE : https://www.ensae.fr/auditeurs-libres/
 5. S'inscrire à L'université de Bordeaux : http://www.math.u-bordeaux.fr/~mchave100p/teaching/ https://www.math.u-bordeaux.fr/imb/spip.php<br><br>
-6. S'inscrire au D.U de data science à Toulouse : https://www.ut-capitole.fr/formations/se-former-autrement/formation-ouverte-et-a-distance/diplome-universitaire-statistique-appliquee-formation-a-distance--326811.kjsp?RH=1319186952079
+6. S'inscrire au D.U de Statistiques à Toulouse : https://www.ut-capitole.fr/formations/se-former-autrement/formation-ouverte-et-a-distance/diplome-universitaire-statistique-appliquee-formation-a-distance--326811.kjsp?RH=1319186952079
 
 <b>Moocs :</b><br>
 Coursera <br>
