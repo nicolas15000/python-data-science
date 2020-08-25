@@ -28,7 +28,6 @@ x ≥ 0 , y ≥ 0
 
 SOURCE : Mastering Python for Finance.pdf
 
-# NOTE : Premier exemple Bizarre, je ne vois pas l'intérêt de cet exemple
 """
 
 
