@@ -44,3 +44,43 @@ Au cas où vous seriez confus au sujet des «7 500» de la contrainte n ° 2, ce
 
 
  """
+
+from pulp import *
+import pandas as pd
+df = pd.read_excel(r"datasets\Fin_optimization.xls")
+print(df)
+
+""" 
+Joli look. Cependant, quelques modifications de mise en forme doivent être apportées pour avancer.
+
+    Transformez les colonnes «Liquidité» et «Notes» en valeurs binaires. Ceci concerne les contraintes 3 et 4. 
+    Les valeurs de chaîne pertinentes dans ces colonnes sont «Immédiat» pour la liquidité et «A» pour la notation. 
+    Distinguer ces valeurs de chaîne des autres est nécessaire pour un calcul ultérieur.
+    Créez une nouvelle colonne binaire pour le type d'investissement. 
+    La contrainte n ° 5 se concentre sur les types d'investissement d'épargne et de CD, 
+    donc les distinguer des autres types d'investissement aidera plus tard.
+    Créez une colonne de tous les 1 pour Amt_invested. 
+    Cela sera utile pour la contrainte n ° 1: la contrainte de portefeuille total de 100 000 $.
+ """
+
+
+df['Liquidity'] = (df['Liquidity']=='Immediate')
+df['Liquidity'] = df['Liquidity'].astype(int)#1b
+df['Rating'] = (df['Rating']=='A')
+df['Rating']= df['Rating'].astype(int)#2
+savecd = [1,1,0,0,0,0,0,0]
+df['Saving&CD'] = savecd#3
+amt_invested = [1]*8
+df['Amt_Invested'] = amt_invested
+print(df)
+
+"""   Designation       Potential Investment  Expected Return  Rating  Risk  Liquidity  Saving&CD  Amt_Invested
+0          X1             Saving Account            0.040       1     0          1          1             1
+1          X2     Certificate of deposit            0.052       1     0          0          1             1
+2          X3         Atlantic Lightning            0.071       0    25          1          0             1
+3          X4              Arkansas REIT            0.100       0    30          1          0             1
+4          X5  Bedrock Insurance Annuity            0.082       1    20          0          0             1
+5          X6          Nocal Mining Bond            0.065       0    15          0          0             1
+6          X7           Minocompo System            0.200       1    65          1          0             1
+7          X8              Antony Hotels            0.125       0    40          1          0             1 """
+
