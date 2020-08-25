@@ -84,7 +84,7 @@ https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Metho
 
 <b>Ecoles : </b><br>
 1. S'inscrire à l'université de Brest : http://formations.univ-brest.fr/fr/index.html
-2. S'inscrire à l'inversité de Rennes : https://formations.univ-rennes1.fr/master-1-data-science
+2. S'inscrire à l'université de Rennes  : https://formations.univ-rennes1.fr/master-1-data-science
 3. S'inscrire à l'EICNAM : http://ecole-ingenieur.cnam.fr/hors-temps-de-travail/inscription-a-l-eicnam/
 4. S'inscrire à l'ENSAE : https://www.ensae.fr/auditeurs-libres/
 5. S'inscrire à L'université de Bordeaux : http://www.math.u-bordeaux.fr/~mchave100p/teaching/ https://www.math.u-bordeaux.fr/imb/spip.php<br><br>
