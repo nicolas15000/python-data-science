@@ -22,7 +22,7 @@ Un + 1 = Un + r
 # -------------------------------------------------------------------------------
 
 # Observons un exemple. On veut calculer le terme de rang 5 de la suite arithmétique de premier terme 1 et de raison 2. 
-# Autrement dit, on va multiplier 1 par 2, puis ce résultat par 2, etc.
+# Autrement dit, on va additionner  2 à u0 , puis 2 à u1 , etc.
 
 u0 = 1       # on initialise u au premier terme de la suite
 n = 5        # on veut calculer le terme de rang 5
