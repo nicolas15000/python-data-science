@@ -8,7 +8,7 @@ Sources :
 3. Yvan Monka - SUITES : Calculer la somme des termes d'une suite (ALGORITHME) - Tutoriel PYTHON 
 4. Python au lycée - tome 2 -  http://exo7.emath.fr/cours/livre-python2.pdf 
 5. https://emilypython.wordpress.com/2019/02/20/calculer-le-terme-de-rang-n-dune-suite-recurrente-avec-python/
-
+6. https://www.jeuxmaths.fr/cours/suites-geometriques.php
 """
 
 
@@ -108,10 +108,10 @@ Une production baisse de 2% par mois, salaire augmente de 10% par ans, l'netrepr
 
 u0 = 1       # on initialise u au premier terme de la suite
 n = 5        # on veut calculer le terme de rang 5
-raison = 2   # on multiplie par 2 à chaque fois.
+q = 2   # on multiplie par 2 à chaque fois.
 
 # Un = q^n * U0 ->c'est la formule du livre Dunod Finances
-u5 = raison ** n * u0
+u5 = q ** n * u0
 print(u5)
 
 
@@ -142,6 +142,35 @@ print(calculerTermeRecurrence(1,double,5))
 
 # -------------------------------------------------------------------------------
 # 3. Somme des termes d'une suite géométrique
-# Somme = (q ^ Nombre de termes - 1 / q - 1 ) * 1er terme
+# Somme = (q ^ (Nombre de termes+1) - 1 / q - 1 ) * 1er terme 
+# avec q qui est la raison   avec q ≠ 1 et q ≠ 0,
 # -------------------------------------------------------------------------------
 
+u0 = 1       # on initialise u au premier terme de la suite
+n = 5        # on veut calculer le terme de rang 5
+q = 2        # on multiplie par 2 à chaque fois.
+
+# Somme = (q ^ (Nombre de termes+1) - 1 / q - 1 ) * 1er terme ->c'est la formule du livre Dunod Finances
+c = q ** (n + 1)
+Somme =  (  (c - 1) / (q - 1)) * u0 
+print(Somme) # u5 32 -> somme u0 + u1 + u 2 = 63 = OK
+
+# u0 1
+# u1 2
+# u2 4 -> somme u0 + u1 + u 2 = 7
+# u3 8 -> somme u0 + u1 + u 2 + u3= 15
+# u4 16 -> somme u0 + u1 + u 2 + u3 + u4 = 31
+# u5 32 -> somme u0 + u1 + u 2 + u3 + u4 + u5 = 63
+# u6 64
+
+# -------------------------------------------------------------------------------
+# 3. Somme des termes d'une suite géométrique sans commencer par u0
+# Somme = (q ^ (Nombre de termes+1) - 1 / q - 1 ) * 1er terme 
+# avec q qui est la raison   avec q ≠ 1 et q ≠ 0,
+# -------------------------------------------------------------------------------
+u3 = 15
+n = 5
+# Somme = (q ^ Nombre de termes - 1 / q - 1 ) * 1er terme
+c = q ** n 
+Somme =  (  (c - 1) / (q - 1)) * u3 
+print(Somme) # u5 32 -> somme u0 + u1 + u 2 = 63 = OK
