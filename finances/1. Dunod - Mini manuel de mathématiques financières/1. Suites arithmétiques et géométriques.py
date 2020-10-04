@@ -100,6 +100,13 @@ Un + 1 = q * Un
 ON les retrouve quand on multiplie par un facteur constant 
 Une production baisse de 2% par mois, salaire augmente de 10% par ans, l'netreprise double tous les 3 ans, les intérêts composés.
 
+
+Une augmentation de 10% est une multiplication par 1.1
+Une baisse de 2% signifie une multiplication par 0.98
+
+Si z est une valeur
+Une augmentation  de +t% = z * 1 + t%
+Une baisse de -t% = z * 1 - t%
 """
 # -------------------------------------------------------------------------------
 # 1. Calculer la valeur d'un terme d'une suite géométrique si on connait u0 ( Le premier terme):
