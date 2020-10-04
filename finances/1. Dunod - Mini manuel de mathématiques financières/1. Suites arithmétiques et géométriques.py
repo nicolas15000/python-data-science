@@ -31,7 +31,7 @@ Loyer + 400 par mois, Retirer 100E de son compte tous les ans, intérêts simple
 
 """
 # -------------------------------------------------------------------------------
-# 1. Calculer un terme d'une suite arithmétique si on a u0 ( Le premier terme):
+# 1. Calculer la valeur d' un terme d'une suite arithmétique si on connait u0 ( Le premier terme):
 # Un = U0 + n * r
 # -------------------------------------------------------------------------------
 
@@ -97,16 +97,51 @@ U0 est le premier terme, U1 le second ,U2 le troisième et ainsi de suite : Un
 Définition globale:
 Un + 1 = q * Un
 
+ON les retrouve quand on multiplie par un facteur constant 
+Une production baisse de 2% par mois, salaire augmente de 10% par ans, l'netreprise double tous les 3 ans, les intérêts composés.
+
 """
 # -------------------------------------------------------------------------------
-# 1. Calculer un terme d'une suite géométrique si on a u0 ( Le premier terme):
+# 1. Calculer la valeur d'un terme d'une suite géométrique si on connait u0 ( Le premier terme):
 # Un = q^n * U0
 # -------------------------------------------------------------------------------
 
+u0 = 1       # on initialise u au premier terme de la suite
+n = 5        # on veut calculer le terme de rang 5
+raison = 2   # on multiplie par 2 à chaque fois.
+
+# Un = q^n * U0 ->c'est la formule du livre Dunod Finances
+u5 = raison ** n * u0
+print(u5)
 
 
 
+""" 
+Seconde solution :
+Il est possible de mettre tout ceci dans une fonction Python nommée calculerTermeRecurrence, qui va prendre trois paramètres : """
+def calculerTermeRecurrence(premierTerme,f,n):
+    u = premierTerme
+    for index in range(n):
+        u = f(u)
+    return u
+
+def double(x):
+    return 2 * x
+
+print(calculerTermeRecurrence(1,double,5))
 
 
+# -------------------------------------------------------------------------------
+# 2. Calculer la valeur d'un terme d'une suite géométrique si on ne dispose pas du premier terme:
+# Un = q^n-k * Uk
+# -------------------------------------------------------------------------------
 
+# Exemple : Si on a une suite  de raison 5 avec u3 = 625 , alors k = 3 dans la formule précédente.
+# On peux ensuite calculer Un
+
+
+# -------------------------------------------------------------------------------
+# 3. Somme des termes d'une suite géométrique
+# Somme = (q ^ Nombre de termes - 1 / q - 1 ) * 1er terme
+# -------------------------------------------------------------------------------
 
