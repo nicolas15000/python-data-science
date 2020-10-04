@@ -5,7 +5,14 @@ Sources :
 
 1. Dunod - Mini manuel de mathématiques financières
 2. Dunod - Méthodes mathématiques pourl'informatique pour le BTS SIO
-2. Yvan Monka - SUITES : Calculer la somme des termes d'une suite (ALGORITHME) - Tutoriel PYTHON """
+3. Yvan Monka - SUITES : Calculer la somme des termes d'une suite (ALGORITHME) - Tutoriel PYTHON 
+4. Python au lycée - tome 2 -  http://exo7.emath.fr/cours/livre-python2.pdf 
+5. https://emilypython.wordpress.com/2019/02/20/calculer-le-terme-de-rang-n-dune-suite-recurrente-avec-python/
+
+"""
+
+
+
 
 
 
@@ -39,6 +46,21 @@ raison = 2   # on ajoute 2 à chaque fois.
 u5 = u0 + n * raison
 print(u5)
 # ça nous donne la valeur de 11 pour le terme de rang 5
+
+""" 
+Seconde solution :
+Il est possible de mettre tout ceci dans une fonction Python nommée calculerTermeRecurrence, qui va prendre trois paramètres : """
+def calculerTermeRecurrence(premierTerme,f,n):
+    u = premierTerme
+    for index in range(n):
+        u = f(u)
+    return u
+
+def double(x):
+    return 2 + x
+
+
+print(calculerTermeRecurrence(1,double,5))
 
 # -------------------------------------------------------------------------------
 # 2. Calculer la somme des termes d'une suite arithmétique :
