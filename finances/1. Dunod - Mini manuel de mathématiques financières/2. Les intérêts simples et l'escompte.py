@@ -24,7 +24,7 @@ C0 = 1000 #capital placé
 Cn = C0 * ( 1 + n * t)
 print(Cn) # 1060
 
-# Avec une Function :
+# On transforme ça en function :
 def placement_annuel(nb_annees,taux_decimal,capital_place):
     return capital_place * (1 + nb_annees * taux_decimal)
 
@@ -79,7 +79,7 @@ C0 = 1000 #capital placé
 capital = C0 * (1 + t * (j/360))
 print(capital) # Idem livre Dunod 1041.11
 
-# Avec une Function :
+# On transforme ça en function :
 def placement_journalier(nb_jours,taux_decimal,capital_place):
     return capital_place * (1 + taux_decimal * (nb_jours/360))
 
@@ -89,3 +89,28 @@ print(placement_journalier(185,0.08,1000)) # Idem livre Dunod 1041.11
 # 2. La formule des versements constants .
 # -------------------------------------
 
+""" Une personne place une somme S tous les mois sur un compte au taux T pendant M mois .
+Quelle est la valeur du capital après le dernier versement ? """
+
+""" Exemple : Une personne place une somme S de 1000 tous les mois sur un compte au taux T de 5 % pendant 15 mois .
+Quelle est la valeur du capital après le dernier versement ? """
+
+somme = 1000
+nb_mois = 15
+taux = 0.05
+
+#Formule du livre Dunod : 
+capital = somme * nb_mois * ( 1 + taux * ((nb_mois - 1 )/ 24 ))
+print(capital) # Idem livre Dunod  :  15 437,50E
+
+# On transforme ça en function :
+def versement_constant(somme,nb_mois,taux):
+    return somme * nb_mois * ( 1 + taux * ((nb_mois - 1 )/ 24 ))
+
+print(versement_constant(50,10,0.10)) # La personne qui investit 50 euros par mois sur 10 mois à 10% aura un capital de 518.75 euros à la fin des 10 mois, soit 18.75 d'intérêts
+
+# -------------------------------------
+# 3. Calculer un taux moyen .
+# -------------------------------------
+
+""" On investit à des taux différents, et on veut calculer le taux moyen de nos investissements. """
