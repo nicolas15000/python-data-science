@@ -13,9 +13,8 @@ Sources :
 # 1. La formule des intérêts simples .
 # -------------------------------------
 
-
+""" INTERETS PAR ANNEES """
 #Les intérêts simples se calculent à partir du capital initial.
-
 #Initialisation des variables :
 n = 2     #duree_placement
 t = 0.03  #taux_interet annuel de 3 % écrit au format décimal
@@ -23,15 +22,20 @@ C0 = 1000 #capital placé
 
 # La somme totale gagnée à l'année n
 Cn = C0 * ( 1 + n * t)
-print(Cn)
-# 1060
+print(Cn) # 1060
+
+# Avec une Function :
+def placement_annuel(nb_annees,taux_decimal,capital_place):
+    return capital_place * (1 + nb_annees * taux_decimal)
+
+print(placement_annuel(2,0.03,1000)) # 1060
 
 # La somme des intérêts sur n années est :
 In = n * C0 * t
 print(In)
 # 60
 
-#EXEMPLE 2 , en mois:
+""" INTERETS PAR MOIS """
 # Initialisation des variables :
 n = 120     # duree_placement avec un taux mensuel = 10 ans * 12 mois
 t = 0.03    # taux_interet MENSUEL de 3 % écrit au format décimal
@@ -47,6 +51,7 @@ In = n * C0 * t
 print(In)
 # 198 000 euros c'est énorme car c'est un taux mensuel.
 
+""" INTERETS PAR JOURS """
 #EXEMPLE 3 : Durée comptée en jours , sur une année comptable de 360 jours.
 
 #Initialisation des variables :
@@ -73,4 +78,14 @@ C0 = 1000 #capital placé
 # capital = C0 * (1 + t * (j/360))
 capital = C0 * (1 + t * (j/360))
 print(capital) # Idem livre Dunod 1041.11
+
+# Avec une Function :
+def placement_journalier(nb_jours,taux_decimal,capital_place):
+    return capital_place * (1 + taux_decimal * (nb_jours/360))
+
+print(placement_journalier(185,0.08,1000)) # Idem livre Dunod 1041.11
+
+# -------------------------------------
+# 2. La formule des versements constants .
+# -------------------------------------
 
