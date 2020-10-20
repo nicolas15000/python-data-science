@@ -114,3 +114,51 @@ print(versement_constant(50,10,0.10)) # La personne qui investit 50 euros par mo
 # -------------------------------------
 
 """ On investit à des taux différents, et on veut calculer le taux moyen de nos investissements. """
+
+# On place 1000 E pendant 50 jours à 6 % et l'on place 2000E pendant 30 jours à 2%, quel est le taux moyen de l'ensemble de ces 2 placements?
+
+"""
+Cn sont les capitaux placés respectifs en euros
+Dn sont les durées respectifs en jours
+Tn sont les taux respectifs en décimal
+"""
+
+taux_moyen = (1000 * 50 * 0.06 + 2000 * 30 * 0.02) / (1000 * 50  + 2000 * 30 )
+print(taux_moyen * 100) # Idem Livre Dunod : 3.82%
+
+# On transforme ça en function ( Version naïve, pour tester , en fait, il faut un loop dedans assez compliqué):
+def taux_moyen(Cn,Dn,Tn):
+    return  (Cn[0] * Dn[0] * Tn[0] + Cn[1] * Dn[1] * Tn[1]) / (Cn[0] * Dn[0]  + Cn[1] * Dn[1] ) * 100
+
+Cn = [1000,2000]
+Dn = [50,30]
+Tn = [0.06,0.02]
+
+print(taux_moyen(Cn,Dn,Tn))  # Idem Livre Dunod : 3.82%
+
+# Tentative de faire le loop , pour rendre la function générique et vraiment effective : 
+
+def taux_moyen(Cn,Dn,Tn):
+    
+    var1 = []
+    var2 = []
+    
+    for  idx, val in enumerate(Cn ):
+        var1.append(Cn[idx] * Dn[idx] * Tn[idx]) 
+    for idx, val in enumerate(Cn):
+        var2.append(Cn[idx] * Dn[idx] ) 
+
+    total1 = 0
+    total2 = 0
+
+    for x in var1:
+        total1 += x
+    for x in var2:
+        total2 += x
+        
+    return (total1 / total2) * 100
+    
+  
+
+print(taux_moyen(Cn,Dn,Tn))  # Idem Livre Dunod : 3.82%   = OK la function est bonne !
+
