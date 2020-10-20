@@ -104,7 +104,7 @@ for stock in actifs:
     df[stock] = web.DataReader(stock,data_source='yahoo',start=stockStartDate , end=today)['Adj Close']
 print(df)
 
-# Montrer visuellement les cours des actions.
+# ----------------------------------------------   Montrer visuellement les cours des actions. ----------------------------------------------
 
 # Create the title 'Portfolio Adj Close Price History
 title = 'Portfolio Adj. Close Price History    '
@@ -112,7 +112,7 @@ title = 'Portfolio Adj. Close Price History    '
 # Get the stocks
 my_stocks = df
 
-# Create and plot the graph
+# Créer les points
 plt.figure(figsize=(12.2,4.5)) #width = 12.2in, height = 4.5
 
 # Loop through each stock and plot the Adj Close for each day
@@ -127,3 +127,8 @@ plt.ylabel('Adj. Price USD ($)',fontsize=18)
 plt.legend(my_stocks.columns.values, loc='upper left')
 
 plt.show()
+
+
+
+
+
