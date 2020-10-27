@@ -1,6 +1,6 @@
 # Chapitre 1 : Les suites .
 # Source : 1. Dunod - Mini manuel de mathématiques financières
-
+# Functions Python élaborées à partir des fonctions mathématiques du livre, par Nicolas HULEUX
 """ 
 ====================================================================================
 Calculer la valeur d'un terme d'une suite arithmétique, à l'aide d'une function secondaire.

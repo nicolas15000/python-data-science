@@ -155,10 +155,13 @@ def taux_moyen(Cn,Dn,Tn):
         total1 += x
     for x in var2:
         total2 += x
-        
+
     return (total1 / total2) * 100
     
   
 
 print(taux_moyen(Cn,Dn,Tn))  # Idem Livre Dunod : 3.82%   = OK la function est bonne !
 
+# -------------------------------------
+# 4. Calcul de l'escompte .
+# -------------------------------------
