@@ -25,12 +25,9 @@ Files with the KO letters at the beginning of their names have a result to check
 Je stocke ici divers scripts de data science et de mathématiques descriptives ou prédictives en Python.<br>
 
 
-
 ## Dernières news du dépot : 
 - Super lien pour les équations différentielles https://apmonitor.com/pdc/index.php/Main/PhysicsBasedModels
 
-Je vais en ajouter un paquet au fil du temps, en particulier, de l'import CSV avec de l'utilisation de solveurs linéaires .<br>
-L'idée étant de pouvoir résoudre un certain nombre de problèmes génériques, de les confirmer par comparaisons de résultats ( Par exemple, comparaison Excel solveur / Python Pulp), puis de pouvoir les dériver/adapter un peu avec N variables de décision pour les solveurs linéaires, par exemple. Certains scripts sont de moi, d'autres proviennent d'auteurs internet ou de livres.
 
 ## Infos : 
 <br><br>
@@ -117,5 +114,5 @@ Moocs de sciences Physique : <br>
 https://www.my-mooc.com/fr/categorie/physique<br><br>
 
 
-<b> Collabs : </b><br>
+##  Collabs : 
 Vous désirez collaborer avec moi (Surtout sur les solveurs linéaires ( Monde agricole, productions alimentaires, production et j'espère... finance)) ... Ok ! envoyez moi un message<br>
