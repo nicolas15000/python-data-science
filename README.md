@@ -3,12 +3,13 @@
 <br>
 ![Screenshot](iconb.jpg)<br>
 ## English
-Just Some ordered python regressions and linear solvers studies scripts...
+Just Some ordered python regressions, various maths and linear solvers studies scripts...
 
 ## Books
-https://www.amazon.fr/Python-Data-Science-Dummies-Mueller/dp/1119547628
-Python Data Science Handbook<br>
-https://jakevdp.github.io/PythonDataScienceHandbook/
+Data science for dummies : <br>
+https://www.amazon.fr/Python-Data-Science-Dummies-Mueller/dp/1119547628<br>
+Python Data Science Handbook :<br>
+https://jakevdp.github.io/PythonDataScienceHandbook/<br>
 
 ## Info 
 Files with the C letter at the start of their names have confirmed status. <br>
