@@ -18,7 +18,7 @@ Files with the KO letters at the beginning of their names have a result to check
 <b>Français/French</b><br>
 
 ## Intro 
-Je stocke ici divers scripts de data science et de mathématiques descriptives ou prédictives en Python.<br>
+Je stocke ici divers scripts de data science et de mathématiques descriptives ou prédictives en Python, en langue Française<br>
 
 
 ## Dernières news du dépot : 
