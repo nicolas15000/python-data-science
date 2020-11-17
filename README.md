@@ -15,7 +15,7 @@ Files with the C letter at the start of their names have confirmed status. <br>
 Files with the KO letters at the beginning of their names have a result to check or fail.
 
 
-<b>Français/French</b><br>
+##  Français/French
 
 ## Intro 
 Je stocke ici divers scripts de data science et de mathématiques descriptives ou prédictives en Python, en langue Française<br>
