@@ -31,7 +31,7 @@ Je stocke ici divers scripts de data science et de mathématiques descriptives o
 <b>Les scripts possédant l'attribut BASE au début de leurs noms sont les plus simples et fiables.</b><br>
 <b>Les scripts possédant la lettre KO au début de leurs noms ont un statut à vérifier ou en défaut.</b>
 <br>
-(Note : Confirmé, veut dire résultat bon, confirmé par comparaison, cependant, la méthode/stratégie pour obtenir le resultat n'est pas forcément encore la meilleure.)</br>
+(Note : Confirmé, veut dire résultat bon, confirmé par comparaison, cependant, la méthode/stratégie pour obtenir le resultat n'est pas forcément encore la meilleure, les fonctions peuvent parfois être très laides.)</br>
 <br>
 
 ## Librairies utilisées
