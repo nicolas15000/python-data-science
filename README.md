@@ -20,8 +20,19 @@ Files with the KO letters at the beginning of their names have a result to check
 <br> <br>
 
 <b>Français/French</b><br>
-Je stocke ici des scripts de data science et de mathématiques descriptives ou prédictives en Python.<br>
-L'objectif de ce repos est de constituer au fil des années une "boite à outil" fiable et pratique de trames, en data science Python, afin de traiter un bon nombre de problèmes.
+
+## Intro 
+Je stocke ici divers scripts de data science et de mathématiques descriptives ou prédictives en Python.<br>
+
+
+
+## Dernières news du dépot : 
+- Super lien pour les équations différentielles https://apmonitor.com/pdc/index.php/Main/PhysicsBasedModels
+
+Je vais en ajouter un paquet au fil du temps, en particulier, de l'import CSV avec de l'utilisation de solveurs linéaires .<br>
+L'idée étant de pouvoir résoudre un certain nombre de problèmes génériques, de les confirmer par comparaisons de résultats ( Par exemple, comparaison Excel solveur / Python Pulp), puis de pouvoir les dériver/adapter un peu avec N variables de décision pour les solveurs linéaires, par exemple. Certains scripts sont de moi, d'autres proviennent d'auteurs internet ou de livres.
+
+## Infos : 
 <br><br>
 <b>Les scripts possédant la lettre C au début de leur noms ont un statut confirmé.</b><br>
 <b>Les scripts possédant l'attribut BASE au début de leurs noms sont les plus simples et fiables.</b><br>
@@ -30,10 +41,7 @@ L'objectif de ce repos est de constituer au fil des années une "boite à outil"
 (Note : Confirmé, veut dire résultat bon, confirmé par comparaison, cependant, la méthode/stratégie pour obtenir le resultat n'est pas forcément encore la meilleure.)</br>
 <br>
 
-Je vais en ajouter un paquet au fil du temps, en particulier, de l'import CSV avec de l'utilisation de solveurs linéaires .<br>
-L'idée étant de pouvoir résoudre un certain nombre de problèmes génériques, de les confirmer par comparaisons de résultats ( Par exemple, comparaison Excel solveur / Python Pulp), puis de pouvoir les dériver/adapter un peu avec N variables de décision pour les solveurs linéaires, par exemple. Certains scripts sont de moi, d'autres proviennent d'auteurs internet ou de livres.
-
-<b>Librairies utilisées</b>
+## Librairies utilisées
 * numpy<br>
 * matplotlib<br>
 * pandas<br>
@@ -43,7 +51,7 @@ L'idée étant de pouvoir résoudre un certain nombre de problèmes génériques
 * pyschedule https://github.com/timnon/pyschedule<br>
 * Survival regression https://lifelines.readthedocs.io/en/latest/Survival%20Regression.html#the-dataset-for-regression <br><br>
 
-<b>Datasets et notebooks à télécharger sur Kaggle ! </b><br>
+## Datasets et notebooks à télécharger sur Kaggle !
 https://www.kaggle.com/notebooks<br><br>
 
 <b>Liens et références</b><br>
@@ -57,7 +65,7 @@ Conseillé pour l'UE STA001 du Cnam.<br>
 Le site d'un professeur de l'ENSAE:<br>
 http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx/td_2a.html#machine-learning-les-briques-de-bases<br>
 
-<b>Les Chaines Youtube Françaises:</b><br>
+## Les Chaines Youtube Françaises:
 Machine Learnia https://www.youtube.com/channel/UCmpptkXu8iIFe6kfDK5o7VQ<br>
 Clipedia : https://www.youtube.com/channel/UCNwWU1hqK3q-DclufllWCfg<br>
 ProMath : https://www.youtube.com/channel/UC2flwAftkypBx2gLIamxwqg<br>
@@ -82,7 +90,7 @@ Un autre dépot sympa :<br>
 https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers<br>
 
 
-<b>Ecoles : </b><br>
+## Ecoles :
 1. S'inscrire à l'université de Brest : http://formations.univ-brest.fr/fr/index.html
 2. S'inscrire à l'université de Rennes  : https://formations.univ-rennes1.fr/master-1-data-science
 3. S'inscrire à l'EICNAM : http://ecole-ingenieur.cnam.fr/hors-temps-de-travail/inscription-a-l-eicnam/
@@ -90,7 +98,7 @@ https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Metho
 5. S'inscrire à L'université de Bordeaux : http://www.math.u-bordeaux.fr/~mchave100p/teaching/ https://www.math.u-bordeaux.fr/imb/spip.php<br><br>
 6. S'inscrire au D.U de Statistiques à Toulouse : https://www.ut-capitole.fr/formations/se-former-autrement/formation-ouverte-et-a-distance/diplome-universitaire-statistique-appliquee-formation-a-distance--326811.kjsp?RH=1319186952079
 
-<b>Moocs :</b><br>
+## Moocs :
 Coursera <br>
 Programmer en Python pour la Data Science de A à Z :https://www.udemy.com/course/data-science-avec-python/<br>
 Les Data Sciences de A à Z  : https://www.udemy.com/course/les-data-sciences-de-a-a-z/<br>
