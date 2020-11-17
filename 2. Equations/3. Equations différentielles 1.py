@@ -2,6 +2,7 @@
 Sources :
 https://www.codingame.com/playgrounds/17176/recueil-dexercices-pour-apprendre-python-au-lycee/resolution-numerique-dequations-differentielles
 https://dridk.me/equation-differentielle.html
+https://dridk.me/category/informatique.html
 https://interstices.info/modeliser-la-propagation-dune-epidemie/
 https://web.stanford.edu/class/archive/math/math21/math21.1156/files/21/notes5.pdf
 https://www6.versailles-grignon.inrae.fr/ecosys/content/download/5545/68104/version/1/file/Equations_Differentielles.pdf
