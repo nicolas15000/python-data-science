@@ -24,7 +24,7 @@ Je stocke ici divers scripts de data science et de mathématiques descriptives o
 ## Dernières news du dépot : 
 
 - 17-11-2020 - Excellent lien en Français ! : https://dridk.me/
-- 17-11-2020 - Lien hard pour les équations différentielles, en Anglais: https://apmonitor.com/pdc/index.php/Main/PhysicsBasedModels
+- 17-11-2020 - Lien difficile pour les équations différentielles, en Anglais: https://apmonitor.com/pdc/index.php/Main/PhysicsBasedModels
 
 ## Infos : 
 <b>Les scripts possédant la lettre C au début de leur noms ont un statut confirmé.</b><br>
