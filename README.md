@@ -2,22 +2,18 @@
 <b>CAS D'UTILISATIONS .</b>
 <br>
 ![Screenshot](iconb.jpg)<br>
-<b>English</b><br>
-Some ordered python regressions and linear solvers studies scripts, some are mine, others are from various authors and translated into french <br><br>
-My wish is to call theses scripts from my node vue starter, later, with a Flask server.<br>
+## English
+Just Some ordered python regressions and linear solvers studies scripts...
 
-Thanks to this nice book : 
+## Books
 https://www.amazon.fr/Python-Data-Science-Dummies-Mueller/dp/1119547628
-<br>
-And <br>
 Python Data Science Handbook<br>
 https://jakevdp.github.io/PythonDataScienceHandbook/
 
-
-<br>
+## Info 
 Files with the C letter at the start of their names have confirmed status. <br>
 Files with the KO letters at the beginning of their names have a result to check or fail.
-<br> <br>
+
 
 <b>Français/French</b><br>
 
@@ -30,7 +26,6 @@ Je stocke ici divers scripts de data science et de mathématiques descriptives o
 
 
 ## Infos : 
-<br><br>
 <b>Les scripts possédant la lettre C au début de leur noms ont un statut confirmé.</b><br>
 <b>Les scripts possédant l'attribut BASE au début de leurs noms sont les plus simples et fiables.</b><br>
 <b>Les scripts possédant la lettre KO au début de leurs noms ont un statut à vérifier ou en défaut.</b>
@@ -51,16 +46,11 @@ Je stocke ici divers scripts de data science et de mathématiques descriptives o
 ## Datasets et notebooks à télécharger sur Kaggle !
 https://www.kaggle.com/notebooks<br><br>
 
-<b>Liens et références</b><br>
-Merci au livre https://www.eyrolles.com/Informatique/Livre/programmation-lineaire-avec-excel-9782212126594/<br>
-qui récapitule bien les principaux problèmes rencontrés avec le solveur. Je voudrais les transcrire en Python dès que possible ...Le problème étant que les modèles dans ce livre traitent souvent de plusieurs matériels en même temps ( exemple : Génération de 2 alliages en même temps, sous 4 contraintes divergentes ) , c'est assez difficile à retranscrire pour l'instant pour moi, je suis dessus. Normalement, à partir du moment ou le modèle mathématique est correct, on doit pouvoir entrer le P.L avec tous les solveurs ..<br>
+## Liens et références
 
-Egalement le livre : <br>
-https://www.springer.com/gp/book/9782287302787<br>
-Conseillé pour l'UE STA001 du Cnam.<br>
-
-Le site d'un professeur de l'ENSAE:<br>
-http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx/td_2a.html#machine-learning-les-briques-de-bases<br>
+https://www.eyrolles.com/Informatique/Livre/programmation-lineaire-avec-excel-9782212126594/
+https://www.springer.com/gp/book/9782287302787
+Le site d'un professeur de l'ENSAE: http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx/td_2a.html#machine-learning-les-briques-de-bases<br>
 
 ## Les Chaines Youtube Françaises:
 Machine Learnia https://www.youtube.com/channel/UCmpptkXu8iIFe6kfDK5o7VQ<br>
@@ -70,9 +60,6 @@ Nicolas Br https://www.youtube.com/channel/UCzsU0h6kxkSSCqpXTRUHubg<br>
 Yvan Monka : https://www.youtube.com/user/YMONKA<br>
 Saïd Chermak : https://www.youtube.com/channel/UCppNXkk1sgDguxe8fQK9tng<br>
 Science4All : https://www.youtube.com/watch?v=Jf40Xd52NyQ
-
-<br>
-
 
 
 <b>Liens et références (Suite)</b><br>
