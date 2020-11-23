@@ -70,10 +70,24 @@ print(duree) # -4.000 , Dans le livre c'est 4 ans. (Pourquoi négatif ?)
 Déterminer la valeur acquise des versements de ce compte :  """
 
 """ capital = capital acquis en fin de durée.
-M = Nombre de mois ou l'on place le versment constant.
+m = Nombre de mois ou l'on place le versement constant.
 t = taux en décimal
-S = somme placée chaque mois.
+s = somme placée chaque mois.
 
-capital = S * M * ( 1 + t * (M - 1 / 24)) """
+capital = s * m * ( 1 + t * (m - 1 / 24)) """
 
-# capital = 100 * 15  * (1 +0.005 * (15-1/24) ) = 15 437,50 Euros // Resultat DUNOD
+# capital = 1000 * 15  * (1 +0.005 * (15-1/24) ) = 15 437,50 Euros // Resultat DUNOD
+
+# Modélisation de la function des versements constants .
+
+""" 
+m = Nombre de mois ou l'on place le versement constant.
+t = taux en décimal
+s = somme placée chaque mois.
+ """
+def valeur_acquise_des_versements_constants(s,m,t):
+    return s * m * ( 1 + t * ((m - 1) / 24))
+
+print(valeur_acquise_des_versements_constants(1000,15,0.05)) #  idem livre Dunod
+
+
