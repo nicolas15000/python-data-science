@@ -61,7 +61,19 @@ import math
 duree = math.log(S0 / Sn) / math.log(1 + t)
 print(duree) # -4.000 , Dans le livre c'est 4 ans. (Pourquoi négatif ?)
 
-# Modélisation de la function
-#def duree_atteinte
+# Modélisation de la function + a FAIRE 
+# def duree_atteinte
 
-""" d/ Trouver un taux """
+""" 2.3 VERSEMENTS CONSTANTS """
+
+""" On place 1000 Euros pendant 15 mois en intérêts simples à 5% .
+Déterminer la valeur acquise des versements de ce compte :  """
+
+""" capital = capital acquis en fin de durée.
+M = Nombre de mois ou l'on place le versment constant.
+t = taux en décimal
+S = somme placée chaque mois.
+
+capital = S * M * ( 1 + t * (M - 1 / 24)) """
+
+# capital = 100 * 15  * (1 +0.005 * (15-1/24) ) = 15 437,50 Euros // Resultat DUNOD
