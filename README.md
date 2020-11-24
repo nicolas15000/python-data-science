@@ -26,7 +26,7 @@ Je stocke ici divers scripts de data science et de mathématiques descriptives o
 - 17-11-2020 - Excellent lien en Français ! : https://dridk.me/
 - 17-11-2020 - Lien difficile pour les équations différentielles, en Anglais: https://apmonitor.com/pdc/index.php/Main/PhysicsBasedModels
 
-## Des tas de notebooks en Data Science à télécharger sur Kaggle (Anglais)!
+## Datasets et notebooks en Data Science à télécharger sur Kaggle (Anglais)!
 https://www.kaggle.com/notebooks<br><br>
 
 ## Infos : 
