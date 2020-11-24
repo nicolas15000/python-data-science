@@ -55,15 +55,18 @@ https://www.springer.com/gp/book/9782287302787
 Le site d'un professeur de l'ENSAE: http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx/td_2a.html#machine-learning-les-briques-de-bases<br>
 
 ## Les Chaines Youtube Françaises:
+
+<b>Data science, Machine Learning : <b/>
 Machine Learnia https://www.youtube.com/channel/UCmpptkXu8iIFe6kfDK5o7VQ<br>
+Nicolas Br https://www.youtube.com/channel/UCzsU0h6kxkSSCqpXTRUHubg<br>
+Science4All : https://www.youtube.com/watch?v=Jf40Xd52NyQ
+  
+<b>Maths :<b/>
 Clipedia : https://www.youtube.com/channel/UCNwWU1hqK3q-DclufllWCfg<br>
 ProMath : https://www.youtube.com/channel/UC2flwAftkypBx2gLIamxwqg<br>
-J'ai compris Maths : https://www.youtube.com/channel/UCo-O74A4qVz6nq5cfCIee6w
-Nicolas Br https://www.youtube.com/channel/UCzsU0h6kxkSSCqpXTRUHubg<br>
+J'ai compris Maths : https://www.youtube.com/channel/UCo-O74A4qVz6nq5cfCIee6w<br>
 Yvan Monka : https://www.youtube.com/user/YMONKA<br>
 Saïd Chermak : https://www.youtube.com/channel/UCppNXkk1sgDguxe8fQK9tng<br>
-Science4All : https://www.youtube.com/watch?v=Jf40Xd52NyQ
-
 
 <b>Liens et références (Suite)</b><br>
 A regarder également le super dépot Columbia-Intro-Data-Science avec tout le travail d'étudiants de Columbia dans ce domaine avec Python.<br>
