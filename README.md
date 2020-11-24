@@ -56,12 +56,12 @@ Le site d'un professeur de l'ENSAE: http://www.xavierdupre.fr/app/ensae_teaching
 
 ## Les Chaines Youtube Françaises:
 
-<b>Data science, Machine Learning : <b/>
+<b>Data science, Machine Learning : </b><br>
 Machine Learnia https://www.youtube.com/channel/UCmpptkXu8iIFe6kfDK5o7VQ<br>
 Nicolas Br https://www.youtube.com/channel/UCzsU0h6kxkSSCqpXTRUHubg<br>
-Science4All : https://www.youtube.com/watch?v=Jf40Xd52NyQ
+Science4All : https://www.youtube.com/watch?v=Jf40Xd52NyQ<br><br>
   
-<b>Maths :<b/>
+<b>Maths :</b><br>
 Clipedia : https://www.youtube.com/channel/UCNwWU1hqK3q-DclufllWCfg<br>
 ProMath : https://www.youtube.com/channel/UC2flwAftkypBx2gLIamxwqg<br>
 J'ai compris Maths : https://www.youtube.com/channel/UCo-O74A4qVz6nq5cfCIee6w<br>
