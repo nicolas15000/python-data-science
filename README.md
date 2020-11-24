@@ -45,7 +45,7 @@ Je stocke ici divers scripts de data science et de mathématiques descriptives o
 * pyschedule https://github.com/timnon/pyschedule<br>
 * Survival regression https://lifelines.readthedocs.io/en/latest/Survival%20Regression.html#the-dataset-for-regression <br><br>
 
-## Datasets et notebooks à télécharger sur Kaggle !
+## Datasets et notebooks à télécharger sur Kaggle (Anglais)!
 https://www.kaggle.com/notebooks<br><br>
 
 ## Liens et références
