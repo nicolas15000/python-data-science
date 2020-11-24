@@ -21,11 +21,13 @@ Files with the KO letters at the beginning of their names have a result to check
 ## Intro 
 Je stocke ici divers scripts de data science et de mathématiques descriptives ou prédictives en Python, en langue Française<br>
 
-
 ## Dernières news du dépot : 
 
 - 17-11-2020 - Excellent lien en Français ! : https://dridk.me/
 - 17-11-2020 - Lien difficile pour les équations différentielles, en Anglais: https://apmonitor.com/pdc/index.php/Main/PhysicsBasedModels
+
+## Des tas de notebooks en Data Science à télécharger sur Kaggle (Anglais)!
+https://www.kaggle.com/notebooks<br><br>
 
 ## Infos : 
 <b>Les scripts possédant la lettre C au début de leur noms ont un statut confirmé.</b><br>
@@ -44,9 +46,6 @@ Je stocke ici divers scripts de data science et de mathématiques descriptives o
 * pulp (Solvers)<br>
 * pyschedule https://github.com/timnon/pyschedule<br>
 * Survival regression https://lifelines.readthedocs.io/en/latest/Survival%20Regression.html#the-dataset-for-regression <br><br>
-
-## Datasets et notebooks à télécharger sur Kaggle (Anglais)!
-https://www.kaggle.com/notebooks<br><br>
 
 ## Liens et références
 
