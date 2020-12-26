@@ -22,6 +22,9 @@ nous pouvons déplacer les enfants et ne payer que 3800 $). Nous pouvons économ
 
 
 import pulp
+solver_list = pulp.listSolvers(onlyAvailable=True)
+print(solver_list)
+
 # import cplex
 
 bus_problem = pulp.LpProblem("bus", pulp.LpMinimize)
