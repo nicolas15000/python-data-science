@@ -1,7 +1,7 @@
-# Minimiser le poids d'un mélange sous contrainte d'un resistance
+# Minimiser le poids d'un mélange sous contrainte de resistance
 # minimale en fonction de notes x/20 qu'on aurait attribué à chaque élément du mélange.
 # La note minimale de la moyenne de la resistance doit être de 12/20
-# EN COURS DE RESOLUTION
+# EN COURS DE RESOLUTION - NON CONFIRME 
 # Expérimental by Nicolas Estel HULEUX
 """             resistance  poids    
 fer :           18/20       16/20        
@@ -12,7 +12,7 @@ ceramic :       12/20       10/20
 # import PuLP
 from pulp import *
 
-# C'est une maximizaiton
+# C'est une minimization
 prob = LpProblem("Minimize",LpMinimize)
 
 produits = ["fer", "plastic","ceramic"]
@@ -25,11 +25,14 @@ poids = {"fer": 16, "plastic": 6, "ceramic": 20}
 x = LpVariable.dicts("produits ", produits , 0)
 
 # Ajouter la fonction objectif
-# Minimiser le poids sous contrainte de résistance.
+# Minimiser le poids 
 prob += lpSum([poids[i] * x[i] for i in produits ]), "MinimiserPoids"
 
-# Ajouter les contraintes
+# Ajouter les contraintes  Minimiser le poids d'un mélange sous contrainte deresistance
 prob += lpSum([(resistance[i] * x[i]) / 20 for i in produits]) >= 10, "resistance"
+
+# NOTE : Normalement, on doit minimiser la moyenne de toutes les resistances pour aboutier à inférieur à 10, mais 
+# Je ne connais pas encore la syntaxe pour faire pareille chose . Le code on on ajout / 3 ne fonctionne pas, je continue à chercher.
 
 # Cette Fonction est nécessaire lorsque les contraintes sont exprimées en %
 prob += lpSum([1 * x[f] for f in produits]) == 20, "noteMax"
