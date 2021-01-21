@@ -31,8 +31,8 @@ prob += lpSum([poids[i] * x[i] for i in produits ]), "MinimiserPoids"
 # Ajouter les contraintes  Minimiser le poids d'un mélange sous contrainte deresistance
 prob += lpSum([(resistance[i] * x[i]) / 20 for i in produits]) >= 10, "resistance"
 
-# NOTE : Normalement, on doit minimiser la moyenne de toutes les resistances pour aboutier à inférieur à 10, mais 
-# Je ne connais pas encore la syntaxe pour faire pareille chose . Le code on on ajout / 3 ne fonctionne pas, je continue à chercher.
+# NOTE sur les contraintes : Normalement, on doit minimiser la moyenne de toutes les resistances pour imposer une note moyenne > ) 10/20 mais 
+# Je ne connais pas encore la syntaxe pour faire pareille chose . Le code on on ajoute / 3 ne fonctionne pas, je continue à chercher.
 
 # Cette Fonction est nécessaire lorsque les contraintes sont exprimées en %
 prob += lpSum([1 * x[f] for f in produits]) == 20, "noteMax"
